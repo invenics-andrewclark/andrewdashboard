@@ -1,0 +1,490 @@
+{
+  "project_info": {
+    "project_number": "802856385303",
+    "project_id": "jansakti-dev",
+    "storage_bucket": "jansakti-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802856385303:android:ec4f8882e3aaccfb219552",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802856385303-iqv862diqh02pajamlorat8bqi79vdtn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "d180d52d6ac11acb8516c51499936c3b7eee0a86"
+          }
+        },
+        {
+          "client_id": "802856385303-ngta9ubb4jev0sf0m1dm2psrsrbh8cm0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "cd3f3068f072c434e5e509e8da2493c89775f977"
+          }
+        },
+        {
+          "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsxUrAWHo5Ow_FvzUtoWZQmiHX6uwDPg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "802856385303-0vhi2gvdabq8ibbfjkp15ievqb8nmer1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.jansaktidashboard"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802856385303:android:6996ee38df49a7d0219552",
+        "android_client_info": {
+          "package_name": "com.invenics.jansakti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802856385303-jrqnntncjvq938l0rbafko84qnfre512.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.invenics.jansakti",
+            "certificate_hash": "09f12f8abc7c0ddc36fc1d98f2486a352d510b9d"
+          }
+        },
+        {
+          "client_id": "802856385303-r78eermul1oudlgt93r929h6hq3t97an.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.invenics.jansakti",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsxUrAWHo5Ow_FvzUtoWZQmiHX6uwDPg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "802856385303-0vhi2gvdabq8ibbfjkp15ievqb8nmer1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.jansaktidashboard"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802856385303:android:72b913bf734331b9219552",
+        "android_client_info": {
+          "package_name": "com.invenics.jansaktiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802856385303-laalrepsck7g6uijnnilhhdappcn7oh5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.invenics.jansaktiapp",
+            "certificate_hash": "09f12f8abc7c0ddc36fc1d98f2486a352d510b9d"
+          }
+        },
+        {
+          "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsxUrAWHo5Ow_FvzUtoWZQmiHX6uwDPg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "802856385303-0vhi2gvdabq8ibbfjkp15ievqb8nmer1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.jansaktidashboard"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802856385303:android:4401dbca644a135b219552",
+        "android_client_info": {
+          "package_name": "com.invenics.jansakticaptainapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802856385303-48lhmoq32ur0j1noh76tn7hphao2ffkl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.invenics.jansakticaptainapp",
+            "certificate_hash": "09f12f8abc7c0ddc36fc1d98f2486a352d510b9d"
+          }
+        },
+        {
+          "client_id": "802856385303-tjucmgbok305mfq4mmq04oj835h0pb4d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.invenics.jansakticaptainapp",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsxUrAWHo5Ow_FvzUtoWZQmiHX6uwDPg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "802856385303-0vhi2gvdabq8ibbfjkp15ievqb8nmer1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.jansaktidashboard"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802856385303:android:b9d74912d79cb3f2219552",
+        "android_client_info": {
+          "package_name": "com.invenics.jansaktiworkerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802856385303-l0eck1791iscv2o4r5ml8cfc89shkb0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.invenics.jansaktiworkerapp",
+            "certificate_hash": "caa38afb11fed84e4f2ef8d1520efbd8abe916af"
+          }
+        },
+        {
+          "client_id": "802856385303-nr13sepd42n7b62sv7avtm36k9jgi40i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.invenics.jansaktiworkerapp",
+            "certificate_hash": "09f12f8abc7c0ddc36fc1d98f2486a352d510b9d"
+          }
+        },
+        {
+          "client_id": "802856385303-o1vjrjho4asv8a5p49a27pafpko9h4oo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.invenics.jansaktiworkerapp",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsxUrAWHo5Ow_FvzUtoWZQmiHX6uwDPg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "802856385303-0vhi2gvdabq8ibbfjkp15ievqb8nmer1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.jansaktidashboard"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802856385303:android:27e71d0a29534bf2219552",
+        "android_client_info": {
+          "package_name": "com.jansakti_notif"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802856385303-5sp0b6i8hab09po2ci6832kk6vsftpfo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jansakti_notif",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsxUrAWHo5Ow_FvzUtoWZQmiHX6uwDPg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "802856385303-0vhi2gvdabq8ibbfjkp15ievqb8nmer1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.jansaktidashboard"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802856385303:android:ad89c96200aefc33219552",
+        "android_client_info": {
+          "package_name": "com.mycompany.entprojecttracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsxUrAWHo5Ow_FvzUtoWZQmiHX6uwDPg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "802856385303-0vhi2gvdabq8ibbfjkp15ievqb8nmer1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.jansaktidashboard"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802856385303:android:f106bd1e8560afa7219552",
+        "android_client_info": {
+          "package_name": "com.mycompany.invapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802856385303-6bctuhuitdokdm34g8i80nmp08mns2gq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.invapp",
+            "certificate_hash": "09f12f8abc7c0ddc36fc1d98f2486a352d510b9d"
+          }
+        },
+        {
+          "client_id": "802856385303-nr8tdpd8k3h01qmrlvcbcv16tnm1lv6h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.invapp",
+            "certificate_hash": "cd3f3068f072c434e5e509e8da2493c89775f977"
+          }
+        },
+        {
+          "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsxUrAWHo5Ow_FvzUtoWZQmiHX6uwDPg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "802856385303-0vhi2gvdabq8ibbfjkp15ievqb8nmer1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.jansaktidashboard"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802856385303:android:685ab5ee092cab40219552",
+        "android_client_info": {
+          "package_name": "com.mycompany.jansaktidashboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802856385303-bqg6lak4t02mhp1pqm9g62d231cf1br0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.jansaktidashboard",
+            "certificate_hash": "09f12f8abc7c0ddc36fc1d98f2486a352d510b9d"
+          }
+        },
+        {
+          "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsxUrAWHo5Ow_FvzUtoWZQmiHX6uwDPg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "802856385303-0vhi2gvdabq8ibbfjkp15ievqb8nmer1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.jansaktidashboard"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802856385303:android:ac30864c631ebf0c219552",
+        "android_client_info": {
+          "package_name": "com.notificationsss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802856385303-gl1lgr58ak815ald5bkccuad8vse9q54.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.notificationsss",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsxUrAWHo5Ow_FvzUtoWZQmiHX6uwDPg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802856385303-gk29jfuvk8a2gn19ta6nrtmgb9efjogm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "802856385303-0vhi2gvdabq8ibbfjkp15ievqb8nmer1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.jansaktidashboard"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
