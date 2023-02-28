@@ -151,7 +151,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'உள்நுழையவும்',
       'ur': 'سائن ان',
     },
-    '0r8t4eat': {
+    '3frivru0': {
       'en': 'Forgot Password?',
       'hi': '',
       'ta': '',
