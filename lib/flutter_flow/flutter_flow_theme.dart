@@ -135,49 +135,49 @@ class MobileTypography extends Typography {
         'Outfit',
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
-        fontSize: 30,
+        fontSize: 30.0,
       );
   String get title2Family => 'Outfit';
   TextStyle get title2 => GoogleFonts.getFont(
         'Outfit',
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
-        fontSize: 24,
+        fontSize: 24.0,
       );
   String get title3Family => 'Outfit';
   TextStyle get title3 => GoogleFonts.getFont(
         'Outfit',
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
-        fontSize: 20,
+        fontSize: 20.0,
       );
   String get subtitle1Family => 'Outfit';
   TextStyle get subtitle1 => GoogleFonts.getFont(
         'Outfit',
         color: Colors.white,
         fontWeight: FontWeight.normal,
-        fontSize: 16,
+        fontSize: 16.0,
       );
   String get subtitle2Family => 'Urbanist';
   TextStyle get subtitle2 => GoogleFonts.getFont(
         'Urbanist',
         color: theme.primaryText,
         fontWeight: FontWeight.bold,
-        fontSize: 16,
+        fontSize: 16.0,
       );
   String get bodyText1Family => 'Urbanist';
   TextStyle get bodyText1 => GoogleFonts.getFont(
         'Urbanist',
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
-        fontSize: 14,
+        fontSize: 14.0,
       );
   String get bodyText2Family => 'Urbanist';
   TextStyle get bodyText2 => GoogleFonts.getFont(
         'Urbanist',
         color: theme.secondaryText,
         fontWeight: FontWeight.w500,
-        fontSize: 14,
+        fontSize: 14.0,
       );
 }
 
@@ -191,49 +191,49 @@ class TabletTypography extends Typography {
         'Outfit',
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
-        fontSize: 34,
+        fontSize: 34.0,
       );
   String get title2Family => 'Outfit';
   TextStyle get title2 => GoogleFonts.getFont(
         'Outfit',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
-        fontSize: 28,
+        fontSize: 28.0,
       );
   String get title3Family => 'Outfit';
   TextStyle get title3 => GoogleFonts.getFont(
         'Outfit',
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
-        fontSize: 20,
+        fontSize: 20.0,
       );
   String get subtitle1Family => 'Outfit';
   TextStyle get subtitle1 => GoogleFonts.getFont(
         'Outfit',
         color: Colors.white,
         fontWeight: FontWeight.normal,
-        fontSize: 17,
+        fontSize: 17.0,
       );
   String get subtitle2Family => 'Urbanist';
   TextStyle get subtitle2 => GoogleFonts.getFont(
         'Urbanist',
         color: theme.primaryText,
         fontWeight: FontWeight.bold,
-        fontSize: 16,
+        fontSize: 16.0,
       );
   String get bodyText1Family => 'Urbanist';
   TextStyle get bodyText1 => GoogleFonts.getFont(
         'Urbanist',
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
-        fontSize: 14,
+        fontSize: 14.0,
       );
   String get bodyText2Family => 'Urbanist';
   TextStyle get bodyText2 => GoogleFonts.getFont(
         'Urbanist',
         color: theme.secondaryText,
         fontWeight: FontWeight.w500,
-        fontSize: 14,
+        fontSize: 14.0,
       );
 }
 
@@ -247,49 +247,49 @@ class DesktopTypography extends Typography {
         'Outfit',
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
-        fontSize: 34,
+        fontSize: 34.0,
       );
   String get title2Family => 'Outfit';
   TextStyle get title2 => GoogleFonts.getFont(
         'Outfit',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
-        fontSize: 28,
+        fontSize: 28.0,
       );
   String get title3Family => 'Outfit';
   TextStyle get title3 => GoogleFonts.getFont(
         'Outfit',
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
-        fontSize: 20,
+        fontSize: 20.0,
       );
   String get subtitle1Family => 'Outfit';
   TextStyle get subtitle1 => GoogleFonts.getFont(
         'Outfit',
         color: Colors.white,
         fontWeight: FontWeight.normal,
-        fontSize: 17,
+        fontSize: 17.0,
       );
   String get subtitle2Family => 'Urbanist';
   TextStyle get subtitle2 => GoogleFonts.getFont(
         'Urbanist',
         color: theme.primaryText,
         fontWeight: FontWeight.bold,
-        fontSize: 16,
+        fontSize: 16.0,
       );
   String get bodyText1Family => 'Urbanist';
   TextStyle get bodyText1 => GoogleFonts.getFont(
         'Urbanist',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
-        fontSize: 14,
+        fontSize: 14.0,
       );
   String get bodyText2Family => 'Urbanist';
   TextStyle get bodyText2 => GoogleFonts.getFont(
         'Urbanist',
         color: theme.secondaryText,
         fontWeight: FontWeight.w500,
-        fontSize: 14,
+        fontSize: 14.0,
       );
 }
 

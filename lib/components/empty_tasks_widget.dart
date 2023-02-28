@@ -1,5 +1,5 @@
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -10,11 +10,11 @@ class EmptyTasksWidget extends StatefulWidget {
   const EmptyTasksWidget({
     Key? key,
     this.title,
-    this.bodyText,
+    this.body,
   }) : super(key: key);
 
   final String? title;
-  final String? bodyText;
+  final String? body;
 
   @override
   _EmptyTasksWidgetState createState() => _EmptyTasksWidgetState();
@@ -55,10 +55,10 @@ class _EmptyTasksWidgetState extends State<EmptyTasksWidget> {
         Icon(
           Icons.event_note_outlined,
           color: FlutterFlowTheme.of(context).secondaryText,
-          size: 90,
+          size: 90.0,
         ),
         Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
+          padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -77,14 +77,14 @@ class _EmptyTasksWidgetState extends State<EmptyTasksWidget> {
           ),
         ),
         Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 0),
+          padding: EdgeInsetsDirectional.fromSTEB(12.0, 4.0, 12.0, 0.0),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Expanded(
                 child: Text(
-                  widget.bodyText!,
+                  widget.body!,
                   textAlign: TextAlign.center,
                   style: FlutterFlowTheme.of(context).bodyText2,
                 ),

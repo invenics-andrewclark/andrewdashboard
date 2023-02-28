@@ -1,5 +1,5 @@
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -7,7 +7,14 @@ import 'empty_organisations_model.dart';
 export 'empty_organisations_model.dart';
 
 class EmptyOrganisationsWidget extends StatefulWidget {
-  const EmptyOrganisationsWidget({Key? key}) : super(key: key);
+  const EmptyOrganisationsWidget({
+    Key? key,
+    this.title,
+    this.body,
+  }) : super(key: key);
+
+  final String? title;
+  final String? body;
 
   @override
   _EmptyOrganisationsWidgetState createState() =>
@@ -47,20 +54,18 @@ class _EmptyOrganisationsWidgetState extends State<EmptyOrganisationsWidget> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Icon(
-          Icons.business,
+          Icons.event_note_outlined,
           color: FlutterFlowTheme.of(context).secondaryText,
-          size: 90,
+          size: 90.0,
         ),
         Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
+          padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  'cnwszav9' /* Add Organisation */,
-                ),
+                widget.title!,
                 textAlign: TextAlign.center,
                 style: FlutterFlowTheme.of(context).title3.override(
                       fontFamily: FlutterFlowTheme.of(context).title3Family,
@@ -68,6 +73,22 @@ class _EmptyOrganisationsWidgetState extends State<EmptyOrganisationsWidget> {
                       useGoogleFonts: GoogleFonts.asMap().containsKey(
                           FlutterFlowTheme.of(context).title3Family),
                     ),
+              ),
+            ],
+          ),
+        ),
+        Padding(
+          padding: EdgeInsetsDirectional.fromSTEB(12.0, 4.0, 12.0, 0.0),
+          child: Row(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Expanded(
+                child: Text(
+                  widget.body!,
+                  textAlign: TextAlign.center,
+                  style: FlutterFlowTheme.of(context).bodyText2,
+                ),
               ),
             ],
           ),

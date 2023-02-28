@@ -27,25 +27,29 @@ abstract class JobWorkerRecord
 
   String? get gender;
 
-  @BuiltValueField(wireName: 'skill_name')
-  String? get skillName;
-
   @BuiltValueField(wireName: 'experience_level')
   String? get experienceLevel;
 
   @BuiltValueField(wireName: 'worker_image')
   String? get workerImage;
 
-  @BuiltValueField(wireName: 'job_id')
-  DocumentReference? get jobId;
-
-  @BuiltValueField(wireName: 'organisation_id')
-  DocumentReference? get organisationId;
-
-  String? get jobTitle;
-
   @BuiltValueField(wireName: 'organisation_name')
   String? get organisationName;
+
+  @BuiltValueField(wireName: 'job_name')
+  String? get jobName;
+
+  @BuiltValueField(wireName: 'org_name')
+  String? get orgName;
+
+  @BuiltValueField(wireName: 'key_skill')
+  String? get keySkill;
+
+  @BuiltValueField(wireName: 'org_reference')
+  DocumentReference? get orgReference;
+
+  @BuiltValueField(wireName: 'job_reference')
+  DocumentReference? get jobReference;
 
   @BuiltValueField(wireName: kDocumentReferenceField)
   DocumentReference? get ffRef;
@@ -58,11 +62,12 @@ abstract class JobWorkerRecord
     ..comments = ''
     ..workerName = ''
     ..gender = ''
-    ..skillName = ''
     ..experienceLevel = ''
     ..workerImage = ''
-    ..jobTitle = ''
-    ..organisationName = '';
+    ..organisationName = ''
+    ..jobName = ''
+    ..orgName = ''
+    ..keySkill = '';
 
   static Query<Map<String, dynamic>> collection([DocumentReference? parent]) =>
       parent != null
@@ -97,13 +102,14 @@ Map<String, dynamic> createJobWorkerRecordData({
   DocumentReference? workerId,
   String? workerName,
   String? gender,
-  String? skillName,
   String? experienceLevel,
   String? workerImage,
-  DocumentReference? jobId,
-  DocumentReference? organisationId,
-  String? jobTitle,
   String? organisationName,
+  String? jobName,
+  String? orgName,
+  String? keySkill,
+  DocumentReference? orgReference,
+  DocumentReference? jobReference,
 }) {
   final firestoreData = serializers.toFirestore(
     JobWorkerRecord.serializer,
@@ -115,13 +121,14 @@ Map<String, dynamic> createJobWorkerRecordData({
         ..workerId = workerId
         ..workerName = workerName
         ..gender = gender
-        ..skillName = skillName
         ..experienceLevel = experienceLevel
         ..workerImage = workerImage
-        ..jobId = jobId
-        ..organisationId = organisationId
-        ..jobTitle = jobTitle
-        ..organisationName = organisationName,
+        ..organisationName = organisationName
+        ..jobName = jobName
+        ..orgName = orgName
+        ..keySkill = keySkill
+        ..orgReference = orgReference
+        ..jobReference = jobReference,
     ),
   );
 

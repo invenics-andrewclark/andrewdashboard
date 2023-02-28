@@ -15,8 +15,6 @@ abstract class WorkersRecord
 
   String? get phone;
 
-  DateTime? get dob;
-
   String? get gender;
 
   String? get photo;
@@ -58,9 +56,6 @@ abstract class WorkersRecord
   @BuiltValueField(wireName: 'date_available_from')
   DateTime? get dateAvailableFrom;
 
-  @BuiltValueField(wireName: 'captain_scout_ref')
-  DocumentReference? get captainScoutRef;
-
   @BuiltValueField(wireName: 'job_worker_id')
   DocumentReference? get jobWorkerId;
 
@@ -72,6 +67,11 @@ abstract class WorkersRecord
 
   @BuiltValueField(wireName: 'is_working')
   bool? get isWorking;
+
+  String? get dob;
+
+  @BuiltValueField(wireName: 'captain_scout_ref')
+  DocumentReference? get captainScoutRef;
 
   @BuiltValueField(wireName: kDocumentReferenceField)
   DocumentReference? get ffRef;
@@ -94,7 +94,8 @@ abstract class WorkersRecord
     ..bankName = ''
     ..ifscCode = ''
     ..highestQualification = ''
-    ..isWorking = false;
+    ..isWorking = false
+    ..dob = '';
 
   static CollectionReference get collection =>
       FirebaseFirestore.instance.collection('Workers');
@@ -120,7 +121,6 @@ abstract class WorkersRecord
 Map<String, dynamic> createWorkersRecordData({
   String? fullName,
   String? phone,
-  DateTime? dob,
   String? gender,
   String? photo,
   String? email,
@@ -137,11 +137,12 @@ Map<String, dynamic> createWorkersRecordData({
   String? ifscCode,
   String? highestQualification,
   DateTime? dateAvailableFrom,
-  DocumentReference? captainScoutRef,
   DocumentReference? jobWorkerId,
   DocumentReference? userRef,
   DocumentReference? organisationId,
   bool? isWorking,
+  String? dob,
+  DocumentReference? captainScoutRef,
 }) {
   final firestoreData = serializers.toFirestore(
     WorkersRecord.serializer,
@@ -149,7 +150,6 @@ Map<String, dynamic> createWorkersRecordData({
       (w) => w
         ..fullName = fullName
         ..phone = phone
-        ..dob = dob
         ..gender = gender
         ..photo = photo
         ..email = email
@@ -166,11 +166,12 @@ Map<String, dynamic> createWorkersRecordData({
         ..ifscCode = ifscCode
         ..highestQualification = highestQualification
         ..dateAvailableFrom = dateAvailableFrom
-        ..captainScoutRef = captainScoutRef
         ..jobWorkerId = jobWorkerId
         ..userRef = userRef
         ..organisationId = organisationId
-        ..isWorking = isWorking,
+        ..isWorking = isWorking
+        ..dob = dob
+        ..captainScoutRef = captainScoutRef,
     ),
   );
 

@@ -134,8 +134,8 @@ class _NavBarPageState extends State<NavBarPage> {
       'myProfile': MyProfileWidget(),
       'mainCaptain': MainCaptainWidget(),
       'mainScout': MainScoutWidget(),
-      'mainWorker': MainWorkerWidget(),
       'mainOrganisationsPage': MainOrganisationsPageWidget(),
+      'mainWorker': MainWorkerWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
     return Scaffold(
@@ -162,11 +162,11 @@ class _NavBarPageState extends State<NavBarPage> {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.view_week_outlined,
-                size: 24,
+                size: 24.0,
               ),
               activeIcon: Icon(
                 Icons.view_week_rounded,
-                size: 24,
+                size: 24.0,
               ),
               label: FFLocalizations.of(context).getText(
                 '6mv3j0ec' /* Activity */,
@@ -176,11 +176,11 @@ class _NavBarPageState extends State<NavBarPage> {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.account_circle_outlined,
-                size: 24,
+                size: 24.0,
               ),
               activeIcon: Icon(
                 Icons.account_circle_rounded,
-                size: 24,
+                size: 24.0,
               ),
               label: FFLocalizations.of(context).getText(
                 '3e1n01mf' /* Home */,
@@ -190,11 +190,11 @@ class _NavBarPageState extends State<NavBarPage> {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.group_outlined,
-                size: 24,
+                size: 24.0,
               ),
               activeIcon: Icon(
                 Icons.group_rounded,
-                size: 24,
+                size: 24.0,
               ),
               label: FFLocalizations.of(context).getText(
                 '50biycd8' /* My Team */,
@@ -204,11 +204,11 @@ class _NavBarPageState extends State<NavBarPage> {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.group_outlined,
-                size: 24,
+                size: 24.0,
               ),
               activeIcon: Icon(
                 Icons.group_rounded,
-                size: 24,
+                size: 24.0,
               ),
               label: FFLocalizations.of(context).getText(
                 'xzhfbr1o' /* My Team */,
@@ -217,29 +217,29 @@ class _NavBarPageState extends State<NavBarPage> {
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.group_outlined,
-                size: 24,
+                Icons.folder_open,
+                size: 24.0,
               ),
               activeIcon: Icon(
-                Icons.group_rounded,
-                size: 24,
+                Icons.folder_rounded,
+                size: 24.0,
               ),
               label: FFLocalizations.of(context).getText(
-                '4p4uigoa' /* My Team */,
+                'hmxr55qt' /* Organisations */,
               ),
               tooltip: '',
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.folder_open,
-                size: 24,
+                Icons.group_outlined,
+                size: 24.0,
               ),
               activeIcon: Icon(
-                Icons.folder_rounded,
-                size: 24,
+                Icons.group_rounded,
+                size: 24.0,
               ),
               label: FFLocalizations.of(context).getText(
-                'hmxr55qt' /* Organisations */,
+                '4p4uigoa' /* My Team */,
               ),
               tooltip: '',
             )

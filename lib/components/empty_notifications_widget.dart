@@ -1,5 +1,5 @@
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
@@ -56,14 +56,14 @@ class _EmptyNotificationsWidgetState extends State<EmptyNotificationsWidget> {
       children: [
         Lottie.network(
           'https://lottie.host/7d591c38-dd02-4d16-aa1c-b488f9e68525/XC65c8QPHC.json',
-          width: 230,
-          height: 230,
+          width: 230.0,
+          height: 230.0,
           fit: BoxFit.cover,
-          frameRate: FrameRate(30),
+          frameRate: FrameRate(30.0),
           animate: true,
         ),
         Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
+          padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -82,7 +82,7 @@ class _EmptyNotificationsWidgetState extends State<EmptyNotificationsWidget> {
           ),
         ),
         Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 0),
+          padding: EdgeInsetsDirectional.fromSTEB(12.0, 4.0, 12.0, 0.0),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,

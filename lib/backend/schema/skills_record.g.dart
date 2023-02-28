@@ -1,24 +1,22 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'worker_skills_record.dart';
+part of 'skills_record.dart';
 
 // **************************************************************************
 // BuiltValueGenerator
 // **************************************************************************
 
-Serializer<WorkerSkillsRecord> _$workerSkillsRecordSerializer =
-    new _$WorkerSkillsRecordSerializer();
+Serializer<SkillsRecord> _$skillsRecordSerializer =
+    new _$SkillsRecordSerializer();
 
-class _$WorkerSkillsRecordSerializer
-    implements StructuredSerializer<WorkerSkillsRecord> {
+class _$SkillsRecordSerializer implements StructuredSerializer<SkillsRecord> {
   @override
-  final Iterable<Type> types = const [WorkerSkillsRecord, _$WorkerSkillsRecord];
+  final Iterable<Type> types = const [SkillsRecord, _$SkillsRecord];
   @override
-  final String wireName = 'WorkerSkillsRecord';
+  final String wireName = 'SkillsRecord';
 
   @override
-  Iterable<Object?> serialize(
-      Serializers serializers, WorkerSkillsRecord object,
+  Iterable<Object?> serialize(Serializers serializers, SkillsRecord object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
     Object? value;
@@ -36,17 +34,17 @@ class _$WorkerSkillsRecordSerializer
         ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    value = object.isPrimary;
-    if (value != null) {
-      result
-        ..add('is_primary')
-        ..add(
-            serializers.serialize(value, specifiedType: const FullType(bool)));
-    }
     value = object.experienceYears;
     if (value != null) {
       result
         ..add('experience_years')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
+    }
+    value = object.primarySkill;
+    if (value != null) {
+      result
+        ..add('primary_skill')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
@@ -62,10 +60,10 @@ class _$WorkerSkillsRecordSerializer
   }
 
   @override
-  WorkerSkillsRecord deserialize(
+  SkillsRecord deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new WorkerSkillsRecordBuilder();
+    final result = new SkillsRecordBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -81,12 +79,12 @@ class _$WorkerSkillsRecordSerializer
           result.experienceLevel = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String?;
           break;
-        case 'is_primary':
-          result.isPrimary = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool?;
-          break;
         case 'experience_years':
           result.experienceYears = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
+          break;
+        case 'primary_skill':
+          result.primarySkill = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String?;
           break;
         case 'Document__Reference__Field':
@@ -102,47 +100,44 @@ class _$WorkerSkillsRecordSerializer
   }
 }
 
-class _$WorkerSkillsRecord extends WorkerSkillsRecord {
+class _$SkillsRecord extends SkillsRecord {
   @override
   final String? skillName;
   @override
   final String? experienceLevel;
   @override
-  final bool? isPrimary;
-  @override
   final String? experienceYears;
+  @override
+  final String? primarySkill;
   @override
   final DocumentReference<Object?>? ffRef;
 
-  factory _$WorkerSkillsRecord(
-          [void Function(WorkerSkillsRecordBuilder)? updates]) =>
-      (new WorkerSkillsRecordBuilder()..update(updates))._build();
+  factory _$SkillsRecord([void Function(SkillsRecordBuilder)? updates]) =>
+      (new SkillsRecordBuilder()..update(updates))._build();
 
-  _$WorkerSkillsRecord._(
+  _$SkillsRecord._(
       {this.skillName,
       this.experienceLevel,
-      this.isPrimary,
       this.experienceYears,
+      this.primarySkill,
       this.ffRef})
       : super._();
 
   @override
-  WorkerSkillsRecord rebuild(
-          void Function(WorkerSkillsRecordBuilder) updates) =>
+  SkillsRecord rebuild(void Function(SkillsRecordBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  WorkerSkillsRecordBuilder toBuilder() =>
-      new WorkerSkillsRecordBuilder()..replace(this);
+  SkillsRecordBuilder toBuilder() => new SkillsRecordBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is WorkerSkillsRecord &&
+    return other is SkillsRecord &&
         skillName == other.skillName &&
         experienceLevel == other.experienceLevel &&
-        isPrimary == other.isPrimary &&
         experienceYears == other.experienceYears &&
+        primarySkill == other.primarySkill &&
         ffRef == other.ffRef;
   }
 
@@ -151,26 +146,26 @@ class _$WorkerSkillsRecord extends WorkerSkillsRecord {
     return $jf($jc(
         $jc(
             $jc($jc($jc(0, skillName.hashCode), experienceLevel.hashCode),
-                isPrimary.hashCode),
-            experienceYears.hashCode),
+                experienceYears.hashCode),
+            primarySkill.hashCode),
         ffRef.hashCode));
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'WorkerSkillsRecord')
+    return (newBuiltValueToStringHelper(r'SkillsRecord')
           ..add('skillName', skillName)
           ..add('experienceLevel', experienceLevel)
-          ..add('isPrimary', isPrimary)
           ..add('experienceYears', experienceYears)
+          ..add('primarySkill', primarySkill)
           ..add('ffRef', ffRef))
         .toString();
   }
 }
 
-class WorkerSkillsRecordBuilder
-    implements Builder<WorkerSkillsRecord, WorkerSkillsRecordBuilder> {
-  _$WorkerSkillsRecord? _$v;
+class SkillsRecordBuilder
+    implements Builder<SkillsRecord, SkillsRecordBuilder> {
+  _$SkillsRecord? _$v;
 
   String? _skillName;
   String? get skillName => _$this._skillName;
@@ -181,30 +176,30 @@ class WorkerSkillsRecordBuilder
   set experienceLevel(String? experienceLevel) =>
       _$this._experienceLevel = experienceLevel;
 
-  bool? _isPrimary;
-  bool? get isPrimary => _$this._isPrimary;
-  set isPrimary(bool? isPrimary) => _$this._isPrimary = isPrimary;
-
   String? _experienceYears;
   String? get experienceYears => _$this._experienceYears;
   set experienceYears(String? experienceYears) =>
       _$this._experienceYears = experienceYears;
 
+  String? _primarySkill;
+  String? get primarySkill => _$this._primarySkill;
+  set primarySkill(String? primarySkill) => _$this._primarySkill = primarySkill;
+
   DocumentReference<Object?>? _ffRef;
   DocumentReference<Object?>? get ffRef => _$this._ffRef;
   set ffRef(DocumentReference<Object?>? ffRef) => _$this._ffRef = ffRef;
 
-  WorkerSkillsRecordBuilder() {
-    WorkerSkillsRecord._initializeBuilder(this);
+  SkillsRecordBuilder() {
+    SkillsRecord._initializeBuilder(this);
   }
 
-  WorkerSkillsRecordBuilder get _$this {
+  SkillsRecordBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _skillName = $v.skillName;
       _experienceLevel = $v.experienceLevel;
-      _isPrimary = $v.isPrimary;
       _experienceYears = $v.experienceYears;
+      _primarySkill = $v.primarySkill;
       _ffRef = $v.ffRef;
       _$v = null;
     }
@@ -212,26 +207,26 @@ class WorkerSkillsRecordBuilder
   }
 
   @override
-  void replace(WorkerSkillsRecord other) {
+  void replace(SkillsRecord other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$WorkerSkillsRecord;
+    _$v = other as _$SkillsRecord;
   }
 
   @override
-  void update(void Function(WorkerSkillsRecordBuilder)? updates) {
+  void update(void Function(SkillsRecordBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  WorkerSkillsRecord build() => _build();
+  SkillsRecord build() => _build();
 
-  _$WorkerSkillsRecord _build() {
+  _$SkillsRecord _build() {
     final _$result = _$v ??
-        new _$WorkerSkillsRecord._(
+        new _$SkillsRecord._(
             skillName: skillName,
             experienceLevel: experienceLevel,
-            isPrimary: isPrimary,
             experienceYears: experienceYears,
+            primarySkill: primarySkill,
             ffRef: ffRef);
     replace(_$result);
     return _$result;

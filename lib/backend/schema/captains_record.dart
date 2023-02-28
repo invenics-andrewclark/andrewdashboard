@@ -16,8 +16,6 @@ abstract class CaptainsRecord
 
   String? get phone;
 
-  DateTime? get dob;
-
   String? get gender;
 
   String? get photo;
@@ -61,14 +59,16 @@ abstract class CaptainsRecord
 
   String? get tag;
 
-  @BuiltValueField(wireName: 'user_ref')
-  DocumentReference? get userRef;
-
   @BuiltValueField(wireName: 'organisation_id')
   DocumentReference? get organisationId;
 
   @BuiltValueField(wireName: 'job_id')
   BuiltList<DocumentReference>? get jobId;
+
+  @BuiltValueField(wireName: 'User_Ref')
+  DocumentReference? get userRef;
+
+  String? get dob;
 
   @BuiltValueField(wireName: kDocumentReferenceField)
   DocumentReference? get ffRef;
@@ -93,7 +93,8 @@ abstract class CaptainsRecord
     ..referralCode = ''
     ..recruitmentArea = ''
     ..tag = ''
-    ..jobId = ListBuilder();
+    ..jobId = ListBuilder()
+    ..dob = '';
 
   static CollectionReference get collection =>
       FirebaseFirestore.instance.collection('Captains');
@@ -119,7 +120,6 @@ abstract class CaptainsRecord
 Map<String, dynamic> createCaptainsRecordData({
   String? fullName,
   String? phone,
-  DateTime? dob,
   String? gender,
   String? photo,
   String? email,
@@ -137,8 +137,9 @@ Map<String, dynamic> createCaptainsRecordData({
   String? referralCode,
   String? recruitmentArea,
   String? tag,
-  DocumentReference? userRef,
   DocumentReference? organisationId,
+  DocumentReference? userRef,
+  String? dob,
 }) {
   final firestoreData = serializers.toFirestore(
     CaptainsRecord.serializer,
@@ -146,7 +147,6 @@ Map<String, dynamic> createCaptainsRecordData({
       (c) => c
         ..fullName = fullName
         ..phone = phone
-        ..dob = dob
         ..gender = gender
         ..photo = photo
         ..email = email
@@ -164,9 +164,10 @@ Map<String, dynamic> createCaptainsRecordData({
         ..referralCode = referralCode
         ..recruitmentArea = recruitmentArea
         ..tag = tag
-        ..userRef = userRef
         ..organisationId = organisationId
-        ..jobId = null,
+        ..jobId = null
+        ..userRef = userRef
+        ..dob = dob,
     ),
   );
 

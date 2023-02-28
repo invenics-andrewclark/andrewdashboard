@@ -29,42 +29,6 @@ service cloud.firestore {
       allow delete: if false;
     }
 
-    match /Organisations/{parent}/Jobs/{document} {
-      allow create: if true;
-      allow read: if true;
-      allow write: if false;
-      allow delete: if false;
-    }
-
-    match /{path=**}/Jobs/{document} {
-      allow read: if true;
-    }
-
-
-    match /Workers/{parent}/workerSkills/{document} {
-      allow create: if true;
-      allow read: if true;
-      allow write: if false;
-      allow delete: if false;
-    }
-
-    match /{path=**}/workerSkills/{document} {
-      allow read: if true;
-    }
-
-
-    match /Workers/{parent}/workerExperience/{document} {
-      allow create: if true;
-      allow read: if true;
-      allow write: if false;
-      allow delete: if false;
-    }
-
-    match /{path=**}/workerExperience/{document} {
-      allow read: if true;
-    }
-
-
     match /Organisations/{parent}/employmentContracts/{document} {
       allow create: if true;
       allow read: if true;
@@ -85,6 +49,42 @@ service cloud.firestore {
     }
 
     match /{path=**}/Job_worker/{document} {
+      allow read: if true;
+    }
+
+
+    match /Workers/{parent}/Skills/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/Skills/{document} {
+      allow read: if true;
+    }
+
+
+    match /Workers/{parent}/Experience/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/Experience/{document} {
+      allow read: if true;
+    }
+
+
+    match /Organisations/{parent}/Jobs/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/Jobs/{document} {
       allow read: if true;
     }
 

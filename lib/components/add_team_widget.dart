@@ -1,9 +1,9 @@
-import '../backend/backend.dart';
-import '../components/empty_members_widget.dart';
-import '../flutter_flow/flutter_flow_icon_button.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
-import '../flutter_flow/flutter_flow_widgets.dart';
+import '/backend/backend.dart';
+import '/components/empty_members_widget.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
@@ -50,11 +50,11 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
     context.watch<FFAppState>();
 
     return ClipRRect(
-      borderRadius: BorderRadius.circular(0),
+      borderRadius: BorderRadius.circular(0.0),
       child: BackdropFilter(
         filter: ImageFilter.blur(
-          sigmaX: 8,
-          sigmaY: 8,
+          sigmaX: 8.0,
+          sigmaY: 8.0,
         ),
         child: Container(
           width: double.infinity,
@@ -67,44 +67,45 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Align(
-                alignment: AlignmentDirectional(0, 0),
+                alignment: AlignmentDirectional(0.0, 0.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16, 16, 16, 16),
+                  padding:
+                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
                   child: Material(
                     color: Colors.transparent,
-                    elevation: 5,
+                    elevation: 5.0,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16),
+                      borderRadius: BorderRadius.circular(16.0),
                     ),
                     child: Container(
                       width: double.infinity,
                       height: double.infinity,
                       constraints: BoxConstraints(
-                        maxWidth: 570,
-                        maxHeight: 600,
+                        maxWidth: 570.0,
+                        maxHeight: 600.0,
                       ),
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        borderRadius: BorderRadius.circular(16),
+                        borderRadius: BorderRadius.circular(16.0),
                       ),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 12.0, 0.0, 0.0),
                             child: Container(
-                              width: 50,
-                              height: 4,
+                              width: 50.0,
+                              height: 4.0,
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context).lineColor,
-                                borderRadius: BorderRadius.circular(8),
+                                borderRadius: BorderRadius.circular(8.0),
                               ),
                             ),
                           ),
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(16, 16, 16, 0),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                16.0, 16.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
@@ -119,8 +120,8 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                           ),
                           Expanded(
                             child: Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 4.0, 0.0, 0.0),
                               child: SingleChildScrollView(
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -128,7 +129,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                   children: [
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          16, 0, 0, 0),
+                                          16.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
                                           'v3df17c1' /* Find members by searching belo... */,
@@ -139,7 +140,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          16, 8, 16, 8),
+                                          16.0, 8.0, 16.0, 8.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -168,36 +169,40 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
                                                     color: Color(0x00000000),
-                                                    width: 1,
+                                                    width: 1.0,
                                                   ),
                                                   borderRadius:
-                                                      BorderRadius.circular(12),
+                                                      BorderRadius.circular(
+                                                          12.0),
                                                 ),
                                                 focusedBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
                                                     color: Color(0x00000000),
-                                                    width: 1,
+                                                    width: 1.0,
                                                   ),
                                                   borderRadius:
-                                                      BorderRadius.circular(12),
+                                                      BorderRadius.circular(
+                                                          12.0),
                                                 ),
                                                 errorBorder: OutlineInputBorder(
                                                   borderSide: BorderSide(
                                                     color: Color(0x00000000),
-                                                    width: 1,
+                                                    width: 1.0,
                                                   ),
                                                   borderRadius:
-                                                      BorderRadius.circular(12),
+                                                      BorderRadius.circular(
+                                                          12.0),
                                                 ),
                                                 focusedErrorBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
                                                     color: Color(0x00000000),
-                                                    width: 1,
+                                                    width: 1.0,
                                                   ),
                                                   borderRadius:
-                                                      BorderRadius.circular(12),
+                                                      BorderRadius.circular(
+                                                          12.0),
                                                 ),
                                                 filled: true,
                                                 fillColor:
@@ -215,18 +220,18 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    12, 0, 0, 0),
+                                                    12.0, 0.0, 0.0, 0.0),
                                             child: FlutterFlowIconButton(
                                               borderColor: Colors.transparent,
-                                              borderRadius: 30,
-                                              borderWidth: 1,
-                                              buttonSize: 44,
+                                              borderRadius: 30.0,
+                                              borderWidth: 1.0,
+                                              buttonSize: 44.0,
                                               icon: Icon(
                                                 Icons.search_rounded,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryText,
-                                                size: 24,
+                                                size: 24.0,
                                               ),
                                               onPressed: () async {
                                                 await queryUsersRecordOnce()
@@ -266,7 +271,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 8, 0, 44),
+                                          0.0, 8.0, 0.0, 44.0),
                                       child: Builder(
                                         builder: (context) {
                                           final serachResults = _model
@@ -279,7 +284,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                         .size
                                                         .width *
                                                     0.8,
-                                                height: 230,
+                                                height: 230.0,
                                                 child: EmptyMembersWidget(
                                                   title: 'No Users Found',
                                                   bodyText:
@@ -300,37 +305,39 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                       serachResultsIndex];
                                               return Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(16, 4, 16, 8),
+                                                    .fromSTEB(
+                                                        16.0, 4.0, 16.0, 8.0),
                                                 child: Container(
                                                   width: double.infinity,
-                                                  height: 60,
+                                                  height: 60.0,
                                                   decoration: BoxDecoration(
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     boxShadow: [
                                                       BoxShadow(
-                                                        blurRadius: 4,
+                                                        blurRadius: 4.0,
                                                         color:
                                                             Color(0x32000000),
-                                                        offset: Offset(0, 2),
+                                                        offset:
+                                                            Offset(0.0, 2.0),
                                                       )
                                                     ],
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            8),
+                                                            8.0),
                                                     border: Border.all(
                                                       color: FlutterFlowTheme
                                                               .of(context)
                                                           .primaryBackground,
-                                                      width: 1,
+                                                      width: 1.0,
                                                     ),
                                                   ),
                                                   child: Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(
-                                                                8, 0, 8, 0),
+                                                            .fromSTEB(8.0, 0.0,
+                                                                8.0, 0.0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -341,7 +348,8 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                         ClipRRect(
                                                           borderRadius:
                                                               BorderRadius
-                                                                  .circular(26),
+                                                                  .circular(
+                                                                      26.0),
                                                           child: Image.network(
                                                             valueOrDefault<
                                                                 String>(
@@ -349,8 +357,8 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                                   .photoUrl,
                                                               'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
                                                             ),
-                                                            width: 36,
-                                                            height: 36,
+                                                            width: 36.0,
+                                                            height: 36.0,
                                                             fit: BoxFit.cover,
                                                           ),
                                                         ),
@@ -359,10 +367,10 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                             padding:
                                                                 EdgeInsetsDirectional
                                                                     .fromSTEB(
-                                                                        12,
-                                                                        0,
-                                                                        0,
-                                                                        0),
+                                                                        12.0,
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0),
                                                             child: Column(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -411,8 +419,22 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                           ),
                                                           options:
                                                               FFButtonOptions(
-                                                            width: 80,
-                                                            height: 36,
+                                                            width: 80.0,
+                                                            height: 36.0,
+                                                            padding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0),
+                                                            iconPadding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0),
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .primaryColor,
@@ -435,12 +457,12 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                                 BorderSide(
                                                               color: Colors
                                                                   .transparent,
-                                                              width: 1,
+                                                              width: 1.0,
                                                             ),
                                                             borderRadius:
                                                                 BorderRadius
                                                                     .circular(
-                                                                        50),
+                                                                        50.0),
                                                           ),
                                                         ),
                                                       ],

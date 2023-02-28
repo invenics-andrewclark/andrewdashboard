@@ -4,12 +4,11 @@ import 'index.dart';
 import 'serializers.dart';
 import 'package:built_value/built_value.dart';
 
-part 'worker_skills_record.g.dart';
+part 'skills_record.g.dart';
 
-abstract class WorkerSkillsRecord
-    implements Built<WorkerSkillsRecord, WorkerSkillsRecordBuilder> {
-  static Serializer<WorkerSkillsRecord> get serializer =>
-      _$workerSkillsRecordSerializer;
+abstract class SkillsRecord
+    implements Built<SkillsRecord, SkillsRecordBuilder> {
+  static Serializer<SkillsRecord> get serializer => _$skillsRecordSerializer;
 
   @BuiltValueField(wireName: 'skill_name')
   String? get skillName;
@@ -17,11 +16,11 @@ abstract class WorkerSkillsRecord
   @BuiltValueField(wireName: 'experience_level')
   String? get experienceLevel;
 
-  @BuiltValueField(wireName: 'is_primary')
-  bool? get isPrimary;
-
   @BuiltValueField(wireName: 'experience_years')
   String? get experienceYears;
+
+  @BuiltValueField(wireName: 'primary_skill')
+  String? get primarySkill;
 
   @BuiltValueField(wireName: kDocumentReferenceField)
   DocumentReference? get ffRef;
@@ -29,53 +28,52 @@ abstract class WorkerSkillsRecord
 
   DocumentReference get parentReference => reference.parent.parent!;
 
-  static void _initializeBuilder(WorkerSkillsRecordBuilder builder) => builder
+  static void _initializeBuilder(SkillsRecordBuilder builder) => builder
     ..skillName = ''
     ..experienceLevel = ''
-    ..isPrimary = false
-    ..experienceYears = '';
+    ..experienceYears = ''
+    ..primarySkill = '';
 
   static Query<Map<String, dynamic>> collection([DocumentReference? parent]) =>
       parent != null
-          ? parent.collection('workerSkills')
-          : FirebaseFirestore.instance.collectionGroup('workerSkills');
+          ? parent.collection('Skills')
+          : FirebaseFirestore.instance.collectionGroup('Skills');
 
   static DocumentReference createDoc(DocumentReference parent) =>
-      parent.collection('workerSkills').doc();
+      parent.collection('Skills').doc();
 
-  static Stream<WorkerSkillsRecord> getDocument(DocumentReference ref) => ref
+  static Stream<SkillsRecord> getDocument(DocumentReference ref) => ref
       .snapshots()
       .map((s) => serializers.deserializeWith(serializer, serializedData(s))!);
 
-  static Future<WorkerSkillsRecord> getDocumentOnce(DocumentReference ref) =>
-      ref.get().then(
-          (s) => serializers.deserializeWith(serializer, serializedData(s))!);
+  static Future<SkillsRecord> getDocumentOnce(DocumentReference ref) => ref
+      .get()
+      .then((s) => serializers.deserializeWith(serializer, serializedData(s))!);
 
-  WorkerSkillsRecord._();
-  factory WorkerSkillsRecord(
-          [void Function(WorkerSkillsRecordBuilder) updates]) =
-      _$WorkerSkillsRecord;
+  SkillsRecord._();
+  factory SkillsRecord([void Function(SkillsRecordBuilder) updates]) =
+      _$SkillsRecord;
 
-  static WorkerSkillsRecord getDocumentFromData(
+  static SkillsRecord getDocumentFromData(
           Map<String, dynamic> data, DocumentReference reference) =>
       serializers.deserializeWith(serializer,
           {...mapFromFirestore(data), kDocumentReferenceField: reference})!;
 }
 
-Map<String, dynamic> createWorkerSkillsRecordData({
+Map<String, dynamic> createSkillsRecordData({
   String? skillName,
   String? experienceLevel,
-  bool? isPrimary,
   String? experienceYears,
+  String? primarySkill,
 }) {
   final firestoreData = serializers.toFirestore(
-    WorkerSkillsRecord.serializer,
-    WorkerSkillsRecord(
-      (w) => w
+    SkillsRecord.serializer,
+    SkillsRecord(
+      (s) => s
         ..skillName = skillName
         ..experienceLevel = experienceLevel
-        ..isPrimary = isPrimary
-        ..experienceYears = experienceYears,
+        ..experienceYears = experienceYears
+        ..primarySkill = primarySkill,
     ),
   );
 

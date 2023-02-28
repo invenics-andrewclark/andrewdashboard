@@ -34,13 +34,6 @@ class _$WorkersRecordSerializer implements StructuredSerializer<WorkersRecord> {
         ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    value = object.dob;
-    if (value != null) {
-      result
-        ..add('dob')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
-    }
     value = object.gender;
     if (value != null) {
       result
@@ -153,14 +146,6 @@ class _$WorkersRecordSerializer implements StructuredSerializer<WorkersRecord> {
         ..add(serializers.serialize(value,
             specifiedType: const FullType(DateTime)));
     }
-    value = object.captainScoutRef;
-    if (value != null) {
-      result
-        ..add('captain_scout_ref')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                DocumentReference, const [const FullType.nullable(Object)])));
-    }
     value = object.jobWorkerId;
     if (value != null) {
       result
@@ -192,6 +177,21 @@ class _$WorkersRecordSerializer implements StructuredSerializer<WorkersRecord> {
         ..add(
             serializers.serialize(value, specifiedType: const FullType(bool)));
     }
+    value = object.dob;
+    if (value != null) {
+      result
+        ..add('dob')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
+    }
+    value = object.captainScoutRef;
+    if (value != null) {
+      result
+        ..add('captain_scout_ref')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(
+                DocumentReference, const [const FullType.nullable(Object)])));
+    }
     value = object.ffRef;
     if (value != null) {
       result
@@ -222,10 +222,6 @@ class _$WorkersRecordSerializer implements StructuredSerializer<WorkersRecord> {
         case 'phone':
           result.phone = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String?;
-          break;
-        case 'dob':
-          result.dob = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
           break;
         case 'gender':
           result.gender = serializers.deserialize(value,
@@ -291,12 +287,6 @@ class _$WorkersRecordSerializer implements StructuredSerializer<WorkersRecord> {
           result.dateAvailableFrom = serializers.deserialize(value,
               specifiedType: const FullType(DateTime)) as DateTime?;
           break;
-        case 'captain_scout_ref':
-          result.captainScoutRef = serializers.deserialize(value,
-              specifiedType: const FullType(DocumentReference, const [
-                const FullType.nullable(Object)
-              ])) as DocumentReference<Object?>?;
-          break;
         case 'job_worker_id':
           result.jobWorkerId = serializers.deserialize(value,
               specifiedType: const FullType(DocumentReference, const [
@@ -319,6 +309,16 @@ class _$WorkersRecordSerializer implements StructuredSerializer<WorkersRecord> {
           result.isWorking = serializers.deserialize(value,
               specifiedType: const FullType(bool)) as bool?;
           break;
+        case 'dob':
+          result.dob = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
+          break;
+        case 'captain_scout_ref':
+          result.captainScoutRef = serializers.deserialize(value,
+              specifiedType: const FullType(DocumentReference, const [
+                const FullType.nullable(Object)
+              ])) as DocumentReference<Object?>?;
+          break;
         case 'Document__Reference__Field':
           result.ffRef = serializers.deserialize(value,
               specifiedType: const FullType(DocumentReference, const [
@@ -337,8 +337,6 @@ class _$WorkersRecord extends WorkersRecord {
   final String? fullName;
   @override
   final String? phone;
-  @override
-  final DateTime? dob;
   @override
   final String? gender;
   @override
@@ -372,8 +370,6 @@ class _$WorkersRecord extends WorkersRecord {
   @override
   final DateTime? dateAvailableFrom;
   @override
-  final DocumentReference<Object?>? captainScoutRef;
-  @override
   final DocumentReference<Object?>? jobWorkerId;
   @override
   final DocumentReference<Object?>? userRef;
@@ -381,6 +377,10 @@ class _$WorkersRecord extends WorkersRecord {
   final DocumentReference<Object?>? organisationId;
   @override
   final bool? isWorking;
+  @override
+  final String? dob;
+  @override
+  final DocumentReference<Object?>? captainScoutRef;
   @override
   final DocumentReference<Object?>? ffRef;
 
@@ -390,7 +390,6 @@ class _$WorkersRecord extends WorkersRecord {
   _$WorkersRecord._(
       {this.fullName,
       this.phone,
-      this.dob,
       this.gender,
       this.photo,
       this.email,
@@ -407,11 +406,12 @@ class _$WorkersRecord extends WorkersRecord {
       this.ifscCode,
       this.highestQualification,
       this.dateAvailableFrom,
-      this.captainScoutRef,
       this.jobWorkerId,
       this.userRef,
       this.organisationId,
       this.isWorking,
+      this.dob,
+      this.captainScoutRef,
       this.ffRef})
       : super._();
 
@@ -428,7 +428,6 @@ class _$WorkersRecord extends WorkersRecord {
     return other is WorkersRecord &&
         fullName == other.fullName &&
         phone == other.phone &&
-        dob == other.dob &&
         gender == other.gender &&
         photo == other.photo &&
         email == other.email &&
@@ -445,11 +444,12 @@ class _$WorkersRecord extends WorkersRecord {
         ifscCode == other.ifscCode &&
         highestQualification == other.highestQualification &&
         dateAvailableFrom == other.dateAvailableFrom &&
-        captainScoutRef == other.captainScoutRef &&
         jobWorkerId == other.jobWorkerId &&
         userRef == other.userRef &&
         organisationId == other.organisationId &&
         isWorking == other.isWorking &&
+        dob == other.dob &&
+        captainScoutRef == other.captainScoutRef &&
         ffRef == other.ffRef;
   }
 
@@ -473,25 +473,25 @@ class _$WorkersRecord extends WorkersRecord {
                                                                 $jc(
                                                                     $jc(
                                                                         $jc(
-                                                                            $jc($jc($jc($jc($jc($jc($jc(0, fullName.hashCode), phone.hashCode), dob.hashCode), gender.hashCode), photo.hashCode), email.hashCode),
-                                                                                createdDate.hashCode),
-                                                                            pinCode.hashCode),
-                                                                        area.hashCode),
-                                                                    state.hashCode),
-                                                                district.hashCode),
-                                                            aadhar.hashCode),
-                                                        panNumber.hashCode),
-                                                    accountName.hashCode),
-                                                accountNumber.hashCode),
-                                            bankName.hashCode),
-                                        ifscCode.hashCode),
-                                    highestQualification.hashCode),
-                                dateAvailableFrom.hashCode),
-                            captainScoutRef.hashCode),
-                        jobWorkerId.hashCode),
-                    userRef.hashCode),
-                organisationId.hashCode),
-            isWorking.hashCode),
+                                                                            $jc($jc($jc($jc($jc($jc($jc(0, fullName.hashCode), phone.hashCode), gender.hashCode), photo.hashCode), email.hashCode), createdDate.hashCode),
+                                                                                pinCode.hashCode),
+                                                                            area.hashCode),
+                                                                        state.hashCode),
+                                                                    district.hashCode),
+                                                                aadhar.hashCode),
+                                                            panNumber.hashCode),
+                                                        accountName.hashCode),
+                                                    accountNumber.hashCode),
+                                                bankName.hashCode),
+                                            ifscCode.hashCode),
+                                        highestQualification.hashCode),
+                                    dateAvailableFrom.hashCode),
+                                jobWorkerId.hashCode),
+                            userRef.hashCode),
+                        organisationId.hashCode),
+                    isWorking.hashCode),
+                dob.hashCode),
+            captainScoutRef.hashCode),
         ffRef.hashCode));
   }
 
@@ -500,7 +500,6 @@ class _$WorkersRecord extends WorkersRecord {
     return (newBuiltValueToStringHelper(r'WorkersRecord')
           ..add('fullName', fullName)
           ..add('phone', phone)
-          ..add('dob', dob)
           ..add('gender', gender)
           ..add('photo', photo)
           ..add('email', email)
@@ -517,11 +516,12 @@ class _$WorkersRecord extends WorkersRecord {
           ..add('ifscCode', ifscCode)
           ..add('highestQualification', highestQualification)
           ..add('dateAvailableFrom', dateAvailableFrom)
-          ..add('captainScoutRef', captainScoutRef)
           ..add('jobWorkerId', jobWorkerId)
           ..add('userRef', userRef)
           ..add('organisationId', organisationId)
           ..add('isWorking', isWorking)
+          ..add('dob', dob)
+          ..add('captainScoutRef', captainScoutRef)
           ..add('ffRef', ffRef))
         .toString();
   }
@@ -538,10 +538,6 @@ class WorkersRecordBuilder
   String? _phone;
   String? get phone => _$this._phone;
   set phone(String? phone) => _$this._phone = phone;
-
-  DateTime? _dob;
-  DateTime? get dob => _$this._dob;
-  set dob(DateTime? dob) => _$this._dob = dob;
 
   String? _gender;
   String? get gender => _$this._gender;
@@ -610,11 +606,6 @@ class WorkersRecordBuilder
   set dateAvailableFrom(DateTime? dateAvailableFrom) =>
       _$this._dateAvailableFrom = dateAvailableFrom;
 
-  DocumentReference<Object?>? _captainScoutRef;
-  DocumentReference<Object?>? get captainScoutRef => _$this._captainScoutRef;
-  set captainScoutRef(DocumentReference<Object?>? captainScoutRef) =>
-      _$this._captainScoutRef = captainScoutRef;
-
   DocumentReference<Object?>? _jobWorkerId;
   DocumentReference<Object?>? get jobWorkerId => _$this._jobWorkerId;
   set jobWorkerId(DocumentReference<Object?>? jobWorkerId) =>
@@ -633,6 +624,15 @@ class WorkersRecordBuilder
   bool? get isWorking => _$this._isWorking;
   set isWorking(bool? isWorking) => _$this._isWorking = isWorking;
 
+  String? _dob;
+  String? get dob => _$this._dob;
+  set dob(String? dob) => _$this._dob = dob;
+
+  DocumentReference<Object?>? _captainScoutRef;
+  DocumentReference<Object?>? get captainScoutRef => _$this._captainScoutRef;
+  set captainScoutRef(DocumentReference<Object?>? captainScoutRef) =>
+      _$this._captainScoutRef = captainScoutRef;
+
   DocumentReference<Object?>? _ffRef;
   DocumentReference<Object?>? get ffRef => _$this._ffRef;
   set ffRef(DocumentReference<Object?>? ffRef) => _$this._ffRef = ffRef;
@@ -646,7 +646,6 @@ class WorkersRecordBuilder
     if ($v != null) {
       _fullName = $v.fullName;
       _phone = $v.phone;
-      _dob = $v.dob;
       _gender = $v.gender;
       _photo = $v.photo;
       _email = $v.email;
@@ -663,11 +662,12 @@ class WorkersRecordBuilder
       _ifscCode = $v.ifscCode;
       _highestQualification = $v.highestQualification;
       _dateAvailableFrom = $v.dateAvailableFrom;
-      _captainScoutRef = $v.captainScoutRef;
       _jobWorkerId = $v.jobWorkerId;
       _userRef = $v.userRef;
       _organisationId = $v.organisationId;
       _isWorking = $v.isWorking;
+      _dob = $v.dob;
+      _captainScoutRef = $v.captainScoutRef;
       _ffRef = $v.ffRef;
       _$v = null;
     }
@@ -693,7 +693,6 @@ class WorkersRecordBuilder
         new _$WorkersRecord._(
             fullName: fullName,
             phone: phone,
-            dob: dob,
             gender: gender,
             photo: photo,
             email: email,
@@ -710,11 +709,12 @@ class WorkersRecordBuilder
             ifscCode: ifscCode,
             highestQualification: highestQualification,
             dateAvailableFrom: dateAvailableFrom,
-            captainScoutRef: captainScoutRef,
             jobWorkerId: jobWorkerId,
             userRef: userRef,
             organisationId: organisationId,
             isWorking: isWorking,
+            dob: dob,
+            captainScoutRef: captainScoutRef,
             ffRef: ffRef);
     replace(_$result);
     return _$result;

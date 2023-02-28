@@ -1,5 +1,5 @@
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -55,10 +55,10 @@ class _EmptyMembersWidgetState extends State<EmptyMembersWidget> {
         Icon(
           Icons.group_outlined,
           color: FlutterFlowTheme.of(context).secondaryText,
-          size: 90,
+          size: 90.0,
         ),
         Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
+          padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -77,7 +77,7 @@ class _EmptyMembersWidgetState extends State<EmptyMembersWidget> {
           ),
         ),
         Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 0),
+          padding: EdgeInsetsDirectional.fromSTEB(12.0, 4.0, 12.0, 0.0),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,

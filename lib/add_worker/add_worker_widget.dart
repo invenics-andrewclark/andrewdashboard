@@ -1,15 +1,16 @@
-import '../auth/auth_util.dart';
-import '../backend/api_requests/api_calls.dart';
-import '../backend/firebase_storage/storage.dart';
-import '../flutter_flow/flutter_flow_animations.dart';
-import '../flutter_flow/flutter_flow_drop_down.dart';
-import '../flutter_flow/flutter_flow_icon_button.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
-import '../flutter_flow/flutter_flow_widgets.dart';
-import '../flutter_flow/upload_media.dart';
+import '/auth/auth_util.dart';
+import '/backend/api_requests/api_calls.dart';
+import '/backend/backend.dart';
+import '/backend/firebase_storage/storage.dart';
+import '/flutter_flow/flutter_flow_animations.dart';
+import '/flutter_flow/flutter_flow_drop_down.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import '/flutter_flow/upload_media.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_debounce/easy_debounce.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -42,14 +43,14 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
           delay: 0.ms,
           duration: 300.ms,
           begin: 0.9,
-          end: 1,
+          end: 1.0,
         ),
         FadeEffect(
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 300.ms,
-          begin: 0,
-          end: 1,
+          begin: 0.0,
+          end: 1.0,
         ),
       ],
     ),
@@ -62,14 +63,14 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
           delay: 0.ms,
           duration: 300.ms,
           begin: 0.9,
-          end: 1,
+          end: 1.0,
         ),
         FadeEffect(
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 300.ms,
-          begin: 0,
-          end: 1,
+          begin: 0.0,
+          end: 1.0,
         ),
       ],
     ),
@@ -82,34 +83,14 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
           delay: 0.ms,
           duration: 300.ms,
           begin: 0.9,
-          end: 1,
+          end: 1.0,
         ),
         FadeEffect(
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 300.ms,
-          begin: 0,
-          end: 1,
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation4': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        VisibilityEffect(duration: 1.ms),
-        ScaleEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: 0.9,
-          end: 1,
-        ),
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: 0,
-          end: 1,
+          begin: 0.0,
+          end: 1.0,
         ),
       ],
     ),
@@ -121,8 +102,9 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
     _model = createModel(context, () => AddWorkerModel());
 
     _model.workerNameController ??= TextEditingController();
-    _model.workeMobilePhoneController ??= TextEditingController();
+    _model.workerPhoneController ??= TextEditingController();
     _model.workerEmailController ??= TextEditingController();
+    _model.titleRoleController ??= TextEditingController();
     _model.workerPinCodeController ??= TextEditingController();
     _model.workerAadharController ??= TextEditingController();
     _model.workerPanNumberController ??= TextEditingController();
@@ -154,21 +136,21 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
         automaticallyImplyLeading: false,
         title: Text(
           FFLocalizations.of(context).getText(
-            '8i9xgsf0' /* Add Worker */,
+            '09vf9xyd' /* Add Worker */,
           ),
           style: FlutterFlowTheme.of(context).title2,
         ),
         actions: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
             child: FlutterFlowIconButton(
               borderColor: Colors.transparent,
-              borderRadius: 30,
-              buttonSize: 48,
+              borderRadius: 30.0,
+              buttonSize: 48.0,
               icon: Icon(
                 Icons.close_rounded,
                 color: FlutterFlowTheme.of(context).secondaryText,
-                size: 30,
+                size: 30.0,
               ),
               onPressed: () async {
                 context.pop();
@@ -177,7 +159,7 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
           ),
         ],
         centerTitle: false,
-        elevation: 0,
+        elevation: 0.0,
       ),
       body: SafeArea(
         child: GestureDetector(
@@ -198,7 +180,7 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                         Container(
                           width: double.infinity,
                           constraints: BoxConstraints(
-                            maxWidth: 570,
+                            maxWidth: 570.0,
                           ),
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
@@ -210,7 +192,7 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 4, 0, 0),
+                                      0.0, 4.0, 0.0, 0.0),
                                   child: InkWell(
                                     onTap: () async {
                                       final selectedMedia =
@@ -280,8 +262,8 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                       }
                                     },
                                     child: Container(
-                                      width: 120,
-                                      height: 120,
+                                      width: 120.0,
+                                      height: 120.0,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .primaryBackground,
@@ -293,23 +275,23 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                         ),
                                         boxShadow: [
                                           BoxShadow(
-                                            blurRadius: 6,
+                                            blurRadius: 6.0,
                                             color: Color(0x3A000000),
-                                            offset: Offset(0, 2),
+                                            offset: Offset(0.0, 2.0),
                                           )
                                         ],
                                         shape: BoxShape.circle,
                                       ),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            4, 4, 4, 4),
+                                            4.0, 4.0, 4.0, 4.0),
                                         child: ClipRRect(
                                           borderRadius:
-                                              BorderRadius.circular(120),
+                                              BorderRadius.circular(120.0),
                                           child: Image.network(
                                             _model.uploadedFileUrl,
-                                            width: 100,
-                                            height: 100,
+                                            width: 100.0,
+                                            height: 100.0,
                                             fit: BoxFit.cover,
                                           ),
                                         ),
@@ -319,7 +301,7 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      20, 24, 20, 0),
+                                      20.0, 24.0, 20.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
@@ -327,10 +309,10 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0, 0, 12, 0),
+                                                  0.0, 0.0, 12.0, 0.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              'n0m9ar00' /* Personal Details */,
+                                              'qc8wrmrv' /* Personal Details */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .title3,
@@ -342,14 +324,14 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      16, 16, 16, 0),
+                                      16.0, 16.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller: _model.workerNameController,
                                     obscureText: false,
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        'yg1ekh0n' /* Full Name */,
+                                        'kp2hskr9' /* Full Name */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodyText2,
@@ -357,34 +339,38 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                         borderSide: BorderSide(
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground,
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       contentPadding:
                                           EdgeInsetsDirectional.fromSTEB(
-                                              20, 32, 20, 12),
+                                              20.0, 32.0, 20.0, 12.0),
                                     ),
                                     style:
                                         FlutterFlowTheme.of(context).bodyText1,
@@ -396,15 +382,14 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      16, 16, 16, 0),
+                                      16.0, 16.0, 16.0, 0.0),
                                   child: TextFormField(
-                                    controller:
-                                        _model.workeMobilePhoneController,
+                                    controller: _model.workerPhoneController,
                                     obscureText: false,
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        'mz5mut7x' /* Mobile Phone */,
+                                        '3b9apilq' /* Phone Number */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodyText2,
@@ -412,53 +397,57 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                         borderSide: BorderSide(
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground,
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       contentPadding:
                                           EdgeInsetsDirectional.fromSTEB(
-                                              20, 32, 20, 12),
+                                              20.0, 32.0, 20.0, 12.0),
                                     ),
                                     style:
                                         FlutterFlowTheme.of(context).bodyText1,
                                     textAlign: TextAlign.start,
                                     validator: _model
-                                        .workeMobilePhoneControllerValidator
+                                        .workerPhoneControllerValidator
                                         .asValidator(context),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      16, 16, 16, 0),
+                                      16.0, 16.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller: _model.workerEmailController,
                                     obscureText: false,
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        '8agmczjr' /* Email */,
+                                        'zaci5ome' /* Email */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodyText2,
@@ -466,34 +455,38 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                         borderSide: BorderSide(
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground,
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       contentPadding:
                                           EdgeInsetsDirectional.fromSTEB(
-                                              20, 32, 20, 12),
+                                              20.0, 32.0, 20.0, 12.0),
                                     ),
                                     style:
                                         FlutterFlowTheme.of(context).bodyText1,
@@ -506,127 +499,108 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 16, 0, 0),
-                                  child: InkWell(
-                                    onTap: () async {
-                                      final _datePickedDate =
-                                          await showDatePicker(
-                                        context: context,
-                                        initialDate: getCurrentTimestamp,
-                                        firstDate: DateTime(1900),
-                                        lastDate: DateTime(2050),
-                                      );
-
-                                      if (_datePickedDate != null) {
-                                        setState(() {
-                                          _model.datePicked = DateTime(
-                                            _datePickedDate.year,
-                                            _datePickedDate.month,
-                                            _datePickedDate.day,
-                                          );
-                                        });
-                                      }
-                                    },
-                                    child: Container(
-                                      width: MediaQuery.of(context).size.width *
-                                          0.5,
-                                      height: 60,
-                                      constraints: BoxConstraints(
-                                        maxWidth: 540,
+                                      16.0, 16.0, 16.0, 0.0),
+                                  child: TextFormField(
+                                    controller: _model.titleRoleController,
+                                    obscureText: false,
+                                    decoration: InputDecoration(
+                                      labelText:
+                                          FFLocalizations.of(context).getText(
+                                        '8ryue4wr' /* Date of Birth */,
                                       ),
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
-                                        borderRadius: BorderRadius.circular(8),
-                                        border: Border.all(
+                                      hintStyle: FlutterFlowTheme.of(context)
+                                          .bodyText2,
+                                      enabledBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground,
-                                          width: 2,
+                                          width: 2.0,
                                         ),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            20, 0, 12, 0),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            Text(
-                                              valueOrDefault<String>(
-                                                dateTimeFormat(
-                                                  'd/M/y',
-                                                  _model.datePicked,
-                                                  locale: FFLocalizations.of(
-                                                          context)
-                                                      .languageCode,
-                                                ),
-                                                'Date of Birth',
-                                              ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1,
-                                            ),
-                                            Icon(
-                                              Icons.date_range_outlined,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryText,
-                                              size: 24,
-                                            ),
-                                          ],
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Color(0x00000000),
+                                          width: 2.0,
                                         ),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
+                                      errorBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Color(0x00000000),
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
+                                      ),
+                                      focusedErrorBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Color(0x00000000),
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
+                                      ),
+                                      contentPadding:
+                                          EdgeInsetsDirectional.fromSTEB(
+                                              20.0, 32.0, 20.0, 12.0),
                                     ),
-                                  ).animateOnPageLoad(animationsMap[
-                                      'containerOnPageLoadAnimation1']!),
+                                    style:
+                                        FlutterFlowTheme.of(context).bodyText1,
+                                    textAlign: TextAlign.start,
+                                    validator: _model
+                                        .titleRoleControllerValidator
+                                        .asValidator(context),
+                                  ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      16, 12, 16, 0),
+                                      16.0, 12.0, 16.0, 0.0),
                                   child: FlutterFlowDropDown<String>(
                                     options: [
                                       FFLocalizations.of(context).getText(
-                                        '64vcjb3y' /* Male */,
+                                        'o3wx7do4' /* Male */,
                                       ),
                                       FFLocalizations.of(context).getText(
-                                        'kcdmsy6z' /* Female */,
+                                        'q5rfjjw4' /* Female */,
                                       ),
                                       FFLocalizations.of(context).getText(
-                                        'smsaytv9' /* Other */,
+                                        '2l1zu1o4' /* Other */,
                                       )
                                     ],
                                     onChanged: (val) => setState(
                                         () => _model.workerGenderValue = val),
                                     width: double.infinity,
-                                    height: 60,
+                                    height: 60.0,
                                     textStyle:
                                         FlutterFlowTheme.of(context).bodyText1,
                                     hintText:
                                         FFLocalizations.of(context).getText(
-                                      'jvdtxvmb' /* Select Gender */,
+                                      'nk8fjl2s' /* Select Gender */,
                                     ),
                                     icon: Icon(
                                       Icons.keyboard_arrow_down_rounded,
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryText,
-                                      size: 15,
+                                      size: 15.0,
                                     ),
                                     fillColor: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
-                                    elevation: 2,
+                                    elevation: 2.0,
                                     borderColor: FlutterFlowTheme.of(context)
                                         .primaryBackground,
-                                    borderWidth: 2,
-                                    borderRadius: 8,
+                                    borderWidth: 2.0,
+                                    borderRadius: 8.0,
                                     margin: EdgeInsetsDirectional.fromSTEB(
-                                        24, 4, 12, 4),
+                                        24.0, 4.0, 12.0, 4.0),
                                     hidesUnderline: true,
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      16, 16, 16, 0),
+                                      16.0, 16.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller: _model.workerPinCodeController,
                                     onChanged: (_) => EasyDebounce.debounce(
@@ -646,7 +620,7 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        '223jjggf' /* Pin Code */,
+                                        'sx4h0hxq' /* Pin Code */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodyText2,
@@ -654,34 +628,38 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                         borderSide: BorderSide(
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground,
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       contentPadding:
                                           EdgeInsetsDirectional.fromSTEB(
-                                              20, 32, 20, 12),
+                                              20.0, 32.0, 20.0, 12.0),
                                     ),
                                     style:
                                         FlutterFlowTheme.of(context).bodyText1,
@@ -693,27 +671,27 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 16, 0, 0),
+                                      16.0, 16.0, 16.0, 0.0),
                                   child: Container(
                                     width:
-                                        MediaQuery.of(context).size.width * 0.5,
-                                    height: 60,
+                                        MediaQuery.of(context).size.width * 1.0,
+                                    height: 60.0,
                                     constraints: BoxConstraints(
-                                      maxWidth: 540,
+                                      maxWidth: 540.0,
                                     ),
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(8.0),
                                       border: Border.all(
                                         color: FlutterFlowTheme.of(context)
                                             .primaryBackground,
-                                        width: 2,
+                                        width: 2.0,
                                       ),
                                     ),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          20, 0, 12, 0),
+                                          20.0, 0.0, 12.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
@@ -735,31 +713,31 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                       ),
                                     ),
                                   ).animateOnPageLoad(animationsMap[
-                                      'containerOnPageLoadAnimation2']!),
+                                      'containerOnPageLoadAnimation1']!),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 16, 0, 0),
+                                      16.0, 16.0, 16.0, 0.0),
                                   child: Container(
                                     width:
-                                        MediaQuery.of(context).size.width * 0.5,
-                                    height: 60,
+                                        MediaQuery.of(context).size.width * 1.0,
+                                    height: 60.0,
                                     constraints: BoxConstraints(
-                                      maxWidth: 540,
+                                      maxWidth: 540.0,
                                     ),
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(8.0),
                                       border: Border.all(
                                         color: FlutterFlowTheme.of(context)
                                             .primaryBackground,
-                                        width: 2,
+                                        width: 2.0,
                                       ),
                                     ),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          20, 0, 12, 0),
+                                          20.0, 0.0, 12.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
@@ -781,31 +759,31 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                       ),
                                     ),
                                   ).animateOnPageLoad(animationsMap[
-                                      'containerOnPageLoadAnimation3']!),
+                                      'containerOnPageLoadAnimation2']!),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 16, 0, 0),
+                                      16.0, 16.0, 16.0, 0.0),
                                   child: Container(
                                     width:
-                                        MediaQuery.of(context).size.width * 0.5,
-                                    height: 60,
+                                        MediaQuery.of(context).size.width * 1.0,
+                                    height: 60.0,
                                     constraints: BoxConstraints(
-                                      maxWidth: 540,
+                                      maxWidth: 540.0,
                                     ),
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(8.0),
                                       border: Border.all(
                                         color: FlutterFlowTheme.of(context)
                                             .primaryBackground,
-                                        width: 2,
+                                        width: 2.0,
                                       ),
                                     ),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          20, 0, 12, 0),
+                                          20.0, 0.0, 12.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
@@ -827,11 +805,11 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                       ),
                                     ),
                                   ).animateOnPageLoad(animationsMap[
-                                      'containerOnPageLoadAnimation4']!),
+                                      'containerOnPageLoadAnimation3']!),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      20, 24, 20, 0),
+                                      20.0, 24.0, 20.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
@@ -839,10 +817,10 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0, 0, 12, 0),
+                                                  0.0, 0.0, 12.0, 0.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              'xbwbx3k1' /* Bank Details */,
+                                              'tf4kvlaq' /* Bank Details */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .title3,
@@ -854,14 +832,14 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      16, 16, 16, 0),
+                                      16.0, 16.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller: _model.workerAadharController,
                                     obscureText: false,
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        'vi3ruy19' /* Aadhar */,
+                                        'io1xu8x5' /* Aadhar */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodyText2,
@@ -869,34 +847,38 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                         borderSide: BorderSide(
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground,
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       contentPadding:
                                           EdgeInsetsDirectional.fromSTEB(
-                                              20, 32, 20, 12),
+                                              20.0, 32.0, 20.0, 12.0),
                                     ),
                                     style:
                                         FlutterFlowTheme.of(context).bodyText1,
@@ -908,7 +890,7 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      16, 16, 16, 0),
+                                      16.0, 16.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller:
                                         _model.workerPanNumberController,
@@ -916,7 +898,7 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        '6w78salz' /* PAN Number */,
+                                        'x889sbpy' /* PAN Number */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodyText2,
@@ -924,34 +906,38 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                         borderSide: BorderSide(
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground,
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       contentPadding:
                                           EdgeInsetsDirectional.fromSTEB(
-                                              20, 32, 20, 12),
+                                              20.0, 32.0, 20.0, 12.0),
                                     ),
                                     style:
                                         FlutterFlowTheme.of(context).bodyText1,
@@ -963,14 +949,14 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      16, 16, 16, 0),
+                                      16.0, 16.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller: _model.workerIFSCCodeController,
                                     obscureText: false,
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        'x5q2t29a' /* IFSC Code */,
+                                        'w5tu6wz5' /* IFSC Code */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodyText2,
@@ -978,34 +964,38 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                         borderSide: BorderSide(
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground,
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       contentPadding:
                                           EdgeInsetsDirectional.fromSTEB(
-                                              20, 32, 20, 12),
+                                              20.0, 32.0, 20.0, 12.0),
                                     ),
                                     style:
                                         FlutterFlowTheme.of(context).bodyText1,
@@ -1017,7 +1007,7 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      16, 16, 16, 0),
+                                      16.0, 16.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller:
                                         _model.workerAccountNumberController,
@@ -1025,7 +1015,7 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        'ey7ivw7e' /* Account Number  */,
+                                        'ccjsp7tw' /* Account Number  */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodyText2,
@@ -1033,34 +1023,38 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                         borderSide: BorderSide(
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground,
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       contentPadding:
                                           EdgeInsetsDirectional.fromSTEB(
-                                              20, 32, 20, 12),
+                                              20.0, 32.0, 20.0, 12.0),
                                     ),
                                     style:
                                         FlutterFlowTheme.of(context).bodyText1,
@@ -1072,7 +1066,7 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      16, 16, 16, 0),
+                                      16.0, 16.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller:
                                         _model.workerAccountNameController,
@@ -1080,7 +1074,7 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        'f4jju7ti' /* Account Name */,
+                                        'wn1k2nuz' /* Account Name */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodyText2,
@@ -1088,34 +1082,38 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                         borderSide: BorderSide(
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground,
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       contentPadding:
                                           EdgeInsetsDirectional.fromSTEB(
-                                              20, 32, 20, 12),
+                                              20.0, 32.0, 20.0, 12.0),
                                     ),
                                     style:
                                         FlutterFlowTheme.of(context).bodyText1,
@@ -1127,14 +1125,14 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      16, 16, 16, 0),
+                                      16.0, 16.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller: _model.workerBankNameController,
                                     obscureText: false,
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        '11z50tt4' /* Bank Name */,
+                                        'dpyib8ld' /* Bank Name */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodyText2,
@@ -1142,34 +1140,38 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                         borderSide: BorderSide(
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground,
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
-                                          width: 2,
+                                          width: 2.0,
                                         ),
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
                                       ),
                                       contentPadding:
                                           EdgeInsetsDirectional.fromSTEB(
-                                              20, 32, 20, 12),
+                                              20.0, 32.0, 20.0, 12.0),
                                     ),
                                     style:
                                         FlutterFlowTheme.of(context).bodyText1,
@@ -1184,116 +1186,54 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 24, 0, 16),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 24.0, 0.0, 16.0),
                           child: FFButtonWidget(
                             onPressed: () async {
-                              final phoneNumberVal =
-                                  _model.workeMobilePhoneController.text;
-                              if (phoneNumberVal == null ||
-                                  phoneNumberVal.isEmpty ||
-                                  !phoneNumberVal.startsWith('+')) {
-                                ScaffoldMessenger.of(context).showSnackBar(
-                                  SnackBar(
-                                    content: Text(
-                                        'Phone Number is required and has to start with +.'),
-                                  ),
-                                );
-                                return;
-                              }
-                              await beginPhoneAuth(
-                                context: context,
-                                phoneNumber: phoneNumberVal,
-                                onCodeSent: () async {
-                                  context.goNamedAuth(
-                                    'workerOTP',
-                                    mounted,
-                                    queryParams: {
-                                      'workerFullName': serializeParam(
-                                        _model.workerNameController.text,
-                                        ParamType.String,
-                                      ),
-                                      'workerMobilePhone': serializeParam(
-                                        _model.workeMobilePhoneController.text,
-                                        ParamType.String,
-                                      ),
-                                      'workerEmail': serializeParam(
-                                        _model.workerEmailController.text,
-                                        ParamType.String,
-                                      ),
-                                      'workerDOB': serializeParam(
-                                        _model.datePicked,
-                                        ParamType.DateTime,
-                                      ),
-                                      'workerGender': serializeParam(
-                                        _model.workerGenderValue,
-                                        ParamType.String,
-                                      ),
-                                      'workerPinCode': serializeParam(
-                                        _model.workerPinCodeController.text,
-                                        ParamType.String,
-                                      ),
-                                      'workerArea': serializeParam(
-                                        LocationAPICall.area(
-                                          (_model.apiLocationResult?.jsonBody ??
-                                              ''),
-                                        ).toString(),
-                                        ParamType.String,
-                                      ),
-                                      'workerState': serializeParam(
-                                        LocationAPICall.state(
-                                          (_model.apiLocationResult?.jsonBody ??
-                                              ''),
-                                        ).toString(),
-                                        ParamType.String,
-                                      ),
-                                      'workerDistrict': serializeParam(
-                                        LocationAPICall.district(
-                                          (_model.apiLocationResult?.jsonBody ??
-                                              ''),
-                                        ).toString(),
-                                        ParamType.String,
-                                      ),
-                                      'workerAadhar': serializeParam(
-                                        _model.workerAadharController.text,
-                                        ParamType.String,
-                                      ),
-                                      'workerPan': serializeParam(
-                                        _model.workerPanNumberController.text,
-                                        ParamType.String,
-                                      ),
-                                      'workerIFSCCode': serializeParam(
-                                        _model.workerIFSCCodeController.text,
-                                        ParamType.String,
-                                      ),
-                                      'workerAccountNumber': serializeParam(
-                                        _model
-                                            .workerAccountNumberController.text,
-                                        ParamType.String,
-                                      ),
-                                      'workerAccountName': serializeParam(
-                                        _model.workerAccountNameController.text,
-                                        ParamType.String,
-                                      ),
-                                      'workerBankName': serializeParam(
-                                        _model.workerBankNameController.text,
-                                        ParamType.String,
-                                      ),
-                                      'workerPhoto': serializeParam(
-                                        _model.uploadedFileUrl,
-                                        ParamType.String,
-                                      ),
-                                    }.withoutNulls,
-                                    ignoreRedirect: true,
-                                  );
-                                },
+                              final workersCreateData = createWorkersRecordData(
+                                fullName: _model.workerPhoneController.text,
+                                phone: _model.workerPhoneController.text,
+                                gender: _model.workerGenderValue,
+                                photo: _model.uploadedFileUrl,
+                                email: _model.workerEmailController.text,
+                                createdDate: getCurrentTimestamp,
+                                pinCode: _model.workerPinCodeController.text,
+                                area: LocationAPICall.area(
+                                  (_model.apiLocationResult?.jsonBody ?? ''),
+                                ).toString(),
+                                state: LocationAPICall.state(
+                                  (_model.apiLocationResult?.jsonBody ?? ''),
+                                ).toString(),
+                                district: LocationAPICall.district(
+                                  (_model.apiLocationResult?.jsonBody ?? ''),
+                                ).toString(),
+                                aadhar: _model.workerAadharController.text,
+                                panNumber:
+                                    _model.workerPanNumberController.text,
+                                accountName:
+                                    _model.workerAccountNameController.text,
+                                accountNumber:
+                                    _model.workerAccountNumberController.text,
+                                bankName: _model.workerBankNameController.text,
+                                ifscCode: _model.workerIFSCCodeController.text,
+                                dob: '',
                               );
+                              await WorkersRecord.collection
+                                  .doc()
+                                  .set(workersCreateData);
+
+                              context.pushNamed('addSkillsExp');
                             },
                             text: FFLocalizations.of(context).getText(
-                              'fe92palm' /* Create Profile */,
+                              'r58n01hs' /* Create Profile */,
                             ),
                             options: FFButtonOptions(
-                              width: 270,
-                              height: 50,
+                              width: 270.0,
+                              height: 50.0,
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
                               color: FlutterFlowTheme.of(context).primaryColor,
                               textStyle: FlutterFlowTheme.of(context)
                                   .subtitle2
@@ -1306,12 +1246,12 @@ class _AddWorkerWidgetState extends State<AddWorkerWidget>
                                             FlutterFlowTheme.of(context)
                                                 .subtitle2Family),
                                   ),
-                              elevation: 3,
+                              elevation: 3.0,
                               borderSide: BorderSide(
                                 color: Colors.transparent,
-                                width: 1,
+                                width: 1.0,
                               ),
-                              borderRadius: BorderRadius.circular(50),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                           ),
                         ),

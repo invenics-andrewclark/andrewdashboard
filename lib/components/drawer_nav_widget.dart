@@ -1,7 +1,7 @@
-import '../auth/auth_util.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
-import '../flutter_flow/flutter_flow_widgets.dart';
+import '/auth/auth_util.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -44,18 +44,18 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
     context.watch<FFAppState>();
 
     return Container(
-      width: 270,
+      width: 270.0,
       height: double.infinity,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(0, 44, 0, 0),
+        padding: EdgeInsetsDirectional.fromSTEB(0.0, 44.0, 0.0, 0.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
+              padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -65,14 +65,15 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                     clipBehavior: Clip.antiAliasWithSaveLayer,
                     color: FlutterFlowTheme.of(context).primaryBackground,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(60),
+                      borderRadius: BorderRadius.circular(60.0),
                     ),
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(2, 2, 2, 2),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(2.0, 2.0, 2.0, 2.0),
                       child: AuthUserStreamWidget(
                         builder: (context) => Container(
-                          width: 60,
-                          height: 60,
+                          width: 60.0,
+                          height: 60.0,
                           clipBehavior: Clip.antiAlias,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
@@ -93,8 +94,12 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                       'j81no67g' /* View */,
                     ),
                     options: FFButtonOptions(
-                      width: 80,
-                      height: 40,
+                      width: 80.0,
+                      height: 40.0,
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      iconPadding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primaryColor,
                       textStyle: FlutterFlowTheme.of(context)
                           .subtitle2
@@ -105,12 +110,12 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                             useGoogleFonts: GoogleFonts.asMap().containsKey(
                                 FlutterFlowTheme.of(context).subtitle2Family),
                           ),
-                      elevation: 2,
+                      elevation: 2.0,
                       borderSide: BorderSide(
                         color: Colors.transparent,
-                        width: 1,
+                        width: 1.0,
                       ),
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(8.0),
                     ),
                   ),
                 ],
@@ -118,7 +123,7 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 12),
+                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -139,7 +144,8 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                       style: FlutterFlowTheme.of(context).bodyText2,
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 16, 0, 12),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 12.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -150,8 +156,8 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                             style: FlutterFlowTheme.of(context).bodyText1,
                           ),
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(4, 0, 12, 0),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                4.0, 0.0, 12.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
                                 'ikdzucnf' /* Following */,
@@ -166,8 +172,8 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                             style: FlutterFlowTheme.of(context).bodyText1,
                           ),
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(4, 0, 12, 0),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                4.0, 0.0, 12.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
                                 'ka33pk44' /* Followers */,
@@ -179,27 +185,28 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                       ),
                     ),
                     Divider(
-                      height: 24,
-                      thickness: 1,
+                      height: 24.0,
+                      thickness: 1.0,
                       color: FlutterFlowTheme.of(context).lineColor,
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 12, 0, 12),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 12.0, 0.0, 12.0),
                             child: Icon(
                               Icons.pie_chart_rounded,
                               color: FlutterFlowTheme.of(context).primaryText,
-                              size: 24,
+                              size: 24.0,
                             ),
                           ),
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                16.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
                                 'xnmol3vm' /* Tracker */,
@@ -211,22 +218,23 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 12, 0, 12),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 12.0, 0.0, 12.0),
                             child: Icon(
                               Icons.rule_folder,
                               color: FlutterFlowTheme.of(context).primaryText,
-                              size: 24,
+                              size: 24.0,
                             ),
                           ),
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                16.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
                                 'tgp9100p' /* Projects */,
@@ -238,22 +246,23 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 12, 0, 12),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 12.0, 0.0, 12.0),
                             child: Icon(
                               Icons.group_rounded,
                               color: FlutterFlowTheme.of(context).primaryText,
-                              size: 24,
+                              size: 24.0,
                             ),
                           ),
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                16.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
                                 'gvsvhzns' /* Team */,
@@ -265,27 +274,28 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                       ),
                     ),
                     Divider(
-                      height: 24,
-                      thickness: 1,
+                      height: 24.0,
+                      thickness: 1.0,
                       color: FlutterFlowTheme.of(context).lineColor,
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 12, 0, 12),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 12.0, 0.0, 12.0),
                             child: Icon(
                               Icons.info_outline,
                               color: FlutterFlowTheme.of(context).primaryText,
-                              size: 24,
+                              size: 24.0,
                             ),
                           ),
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                16.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
                                 'r33amlko' /* About */,
@@ -297,22 +307,23 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 12, 0, 12),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 12.0, 0.0, 12.0),
                             child: Icon(
                               Icons.star_rate_rounded,
                               color: FlutterFlowTheme.of(context).primaryText,
-                              size: 24,
+                              size: 24.0,
                             ),
                           ),
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                16.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
                                 'hfpu6vi1' /* Rate App */,
@@ -328,7 +339,7 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 32),
+              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 32.0),
               child: InkWell(
                 onTap: () async {
                   if (Scaffold.of(context).isDrawerOpen ||
@@ -345,15 +356,17 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 12),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
                       child: Icon(
                         Icons.login_outlined,
                         color: FlutterFlowTheme.of(context).primaryText,
-                        size: 24,
+                        size: 24.0,
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
                           'of8ozb94' /* Log Out */,

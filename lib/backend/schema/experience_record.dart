@@ -4,12 +4,12 @@ import 'index.dart';
 import 'serializers.dart';
 import 'package:built_value/built_value.dart';
 
-part 'worker_experience_record.g.dart';
+part 'experience_record.g.dart';
 
-abstract class WorkerExperienceRecord
-    implements Built<WorkerExperienceRecord, WorkerExperienceRecordBuilder> {
-  static Serializer<WorkerExperienceRecord> get serializer =>
-      _$workerExperienceRecordSerializer;
+abstract class ExperienceRecord
+    implements Built<ExperienceRecord, ExperienceRecordBuilder> {
+  static Serializer<ExperienceRecord> get serializer =>
+      _$experienceRecordSerializer;
 
   @BuiltValueField(wireName: 'company_name')
   String? get companyName;
@@ -32,41 +32,38 @@ abstract class WorkerExperienceRecord
 
   DocumentReference get parentReference => reference.parent.parent!;
 
-  static void _initializeBuilder(WorkerExperienceRecordBuilder builder) =>
-      builder
-        ..companyName = ''
-        ..jobTitle = ''
-        ..primarySkill = '';
+  static void _initializeBuilder(ExperienceRecordBuilder builder) => builder
+    ..companyName = ''
+    ..jobTitle = ''
+    ..primarySkill = '';
 
   static Query<Map<String, dynamic>> collection([DocumentReference? parent]) =>
       parent != null
-          ? parent.collection('workerExperience')
-          : FirebaseFirestore.instance.collectionGroup('workerExperience');
+          ? parent.collection('Experience')
+          : FirebaseFirestore.instance.collectionGroup('Experience');
 
   static DocumentReference createDoc(DocumentReference parent) =>
-      parent.collection('workerExperience').doc();
+      parent.collection('Experience').doc();
 
-  static Stream<WorkerExperienceRecord> getDocument(DocumentReference ref) =>
-      ref.snapshots().map(
-          (s) => serializers.deserializeWith(serializer, serializedData(s))!);
+  static Stream<ExperienceRecord> getDocument(DocumentReference ref) => ref
+      .snapshots()
+      .map((s) => serializers.deserializeWith(serializer, serializedData(s))!);
 
-  static Future<WorkerExperienceRecord> getDocumentOnce(
-          DocumentReference ref) =>
-      ref.get().then(
-          (s) => serializers.deserializeWith(serializer, serializedData(s))!);
+  static Future<ExperienceRecord> getDocumentOnce(DocumentReference ref) => ref
+      .get()
+      .then((s) => serializers.deserializeWith(serializer, serializedData(s))!);
 
-  WorkerExperienceRecord._();
-  factory WorkerExperienceRecord(
-          [void Function(WorkerExperienceRecordBuilder) updates]) =
-      _$WorkerExperienceRecord;
+  ExperienceRecord._();
+  factory ExperienceRecord([void Function(ExperienceRecordBuilder) updates]) =
+      _$ExperienceRecord;
 
-  static WorkerExperienceRecord getDocumentFromData(
+  static ExperienceRecord getDocumentFromData(
           Map<String, dynamic> data, DocumentReference reference) =>
       serializers.deserializeWith(serializer,
           {...mapFromFirestore(data), kDocumentReferenceField: reference})!;
 }
 
-Map<String, dynamic> createWorkerExperienceRecordData({
+Map<String, dynamic> createExperienceRecordData({
   String? companyName,
   String? jobTitle,
   String? primarySkill,
@@ -74,9 +71,9 @@ Map<String, dynamic> createWorkerExperienceRecordData({
   DateTime? endDate,
 }) {
   final firestoreData = serializers.toFirestore(
-    WorkerExperienceRecord.serializer,
-    WorkerExperienceRecord(
-      (w) => w
+    ExperienceRecord.serializer,
+    ExperienceRecord(
+      (e) => e
         ..companyName = companyName
         ..jobTitle = jobTitle
         ..primarySkill = primarySkill

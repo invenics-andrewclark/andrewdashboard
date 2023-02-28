@@ -1,27 +1,23 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'worker_experience_record.dart';
+part of 'experience_record.dart';
 
 // **************************************************************************
 // BuiltValueGenerator
 // **************************************************************************
 
-Serializer<WorkerExperienceRecord> _$workerExperienceRecordSerializer =
-    new _$WorkerExperienceRecordSerializer();
+Serializer<ExperienceRecord> _$experienceRecordSerializer =
+    new _$ExperienceRecordSerializer();
 
-class _$WorkerExperienceRecordSerializer
-    implements StructuredSerializer<WorkerExperienceRecord> {
+class _$ExperienceRecordSerializer
+    implements StructuredSerializer<ExperienceRecord> {
   @override
-  final Iterable<Type> types = const [
-    WorkerExperienceRecord,
-    _$WorkerExperienceRecord
-  ];
+  final Iterable<Type> types = const [ExperienceRecord, _$ExperienceRecord];
   @override
-  final String wireName = 'WorkerExperienceRecord';
+  final String wireName = 'ExperienceRecord';
 
   @override
-  Iterable<Object?> serialize(
-      Serializers serializers, WorkerExperienceRecord object,
+  Iterable<Object?> serialize(Serializers serializers, ExperienceRecord object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
     Object? value;
@@ -72,10 +68,10 @@ class _$WorkerExperienceRecordSerializer
   }
 
   @override
-  WorkerExperienceRecord deserialize(
+  ExperienceRecord deserialize(
       Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new WorkerExperienceRecordBuilder();
+    final result = new ExperienceRecordBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -116,7 +112,7 @@ class _$WorkerExperienceRecordSerializer
   }
 }
 
-class _$WorkerExperienceRecord extends WorkerExperienceRecord {
+class _$ExperienceRecord extends ExperienceRecord {
   @override
   final String? companyName;
   @override
@@ -130,11 +126,11 @@ class _$WorkerExperienceRecord extends WorkerExperienceRecord {
   @override
   final DocumentReference<Object?>? ffRef;
 
-  factory _$WorkerExperienceRecord(
-          [void Function(WorkerExperienceRecordBuilder)? updates]) =>
-      (new WorkerExperienceRecordBuilder()..update(updates))._build();
+  factory _$ExperienceRecord(
+          [void Function(ExperienceRecordBuilder)? updates]) =>
+      (new ExperienceRecordBuilder()..update(updates))._build();
 
-  _$WorkerExperienceRecord._(
+  _$ExperienceRecord._(
       {this.companyName,
       this.jobTitle,
       this.primarySkill,
@@ -144,18 +140,17 @@ class _$WorkerExperienceRecord extends WorkerExperienceRecord {
       : super._();
 
   @override
-  WorkerExperienceRecord rebuild(
-          void Function(WorkerExperienceRecordBuilder) updates) =>
+  ExperienceRecord rebuild(void Function(ExperienceRecordBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  WorkerExperienceRecordBuilder toBuilder() =>
-      new WorkerExperienceRecordBuilder()..replace(this);
+  ExperienceRecordBuilder toBuilder() =>
+      new ExperienceRecordBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is WorkerExperienceRecord &&
+    return other is ExperienceRecord &&
         companyName == other.companyName &&
         jobTitle == other.jobTitle &&
         primarySkill == other.primarySkill &&
@@ -178,7 +173,7 @@ class _$WorkerExperienceRecord extends WorkerExperienceRecord {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'WorkerExperienceRecord')
+    return (newBuiltValueToStringHelper(r'ExperienceRecord')
           ..add('companyName', companyName)
           ..add('jobTitle', jobTitle)
           ..add('primarySkill', primarySkill)
@@ -189,9 +184,9 @@ class _$WorkerExperienceRecord extends WorkerExperienceRecord {
   }
 }
 
-class WorkerExperienceRecordBuilder
-    implements Builder<WorkerExperienceRecord, WorkerExperienceRecordBuilder> {
-  _$WorkerExperienceRecord? _$v;
+class ExperienceRecordBuilder
+    implements Builder<ExperienceRecord, ExperienceRecordBuilder> {
+  _$ExperienceRecord? _$v;
 
   String? _companyName;
   String? get companyName => _$this._companyName;
@@ -217,11 +212,11 @@ class WorkerExperienceRecordBuilder
   DocumentReference<Object?>? get ffRef => _$this._ffRef;
   set ffRef(DocumentReference<Object?>? ffRef) => _$this._ffRef = ffRef;
 
-  WorkerExperienceRecordBuilder() {
-    WorkerExperienceRecord._initializeBuilder(this);
+  ExperienceRecordBuilder() {
+    ExperienceRecord._initializeBuilder(this);
   }
 
-  WorkerExperienceRecordBuilder get _$this {
+  ExperienceRecordBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _companyName = $v.companyName;
@@ -236,22 +231,22 @@ class WorkerExperienceRecordBuilder
   }
 
   @override
-  void replace(WorkerExperienceRecord other) {
+  void replace(ExperienceRecord other) {
     ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$WorkerExperienceRecord;
+    _$v = other as _$ExperienceRecord;
   }
 
   @override
-  void update(void Function(WorkerExperienceRecordBuilder)? updates) {
+  void update(void Function(ExperienceRecordBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  WorkerExperienceRecord build() => _build();
+  ExperienceRecord build() => _build();
 
-  _$WorkerExperienceRecord _build() {
+  _$ExperienceRecord _build() {
     final _$result = _$v ??
-        new _$WorkerExperienceRecord._(
+        new _$ExperienceRecord._(
             companyName: companyName,
             jobTitle: jobTitle,
             primarySkill: primarySkill,

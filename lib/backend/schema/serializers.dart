@@ -5,11 +5,11 @@ import 'users_record.dart';
 import 'captains_record.dart';
 import 'workers_record.dart';
 import 'organisations_record.dart';
-import 'jobs_record.dart';
-import 'worker_skills_record.dart';
-import 'worker_experience_record.dart';
 import 'employment_contracts_record.dart';
 import 'job_worker_record.dart';
+import 'skills_record.dart';
+import 'experience_record.dart';
+import 'jobs_record.dart';
 
 import 'index.dart';
 
@@ -24,11 +24,12 @@ const kDocumentReferenceField = 'Document__Reference__Field';
   CaptainsRecord,
   WorkersRecord,
   OrganisationsRecord,
-  JobsRecord,
-  WorkerSkillsRecord,
-  WorkerExperienceRecord,
   EmploymentContractsRecord,
   JobWorkerRecord,
+  SkillsRecord,
+  ExperienceRecord,
+  JobsRecord,
+  ApplicationsStruct,
 ])
 final Serializers serializers = (_$serializers.toBuilder()
       ..add(DocumentReferenceSerializer())

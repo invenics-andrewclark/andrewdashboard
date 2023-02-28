@@ -25,3 +25,16 @@ double progressBarValue(
   }
   return value;
 }
+
+String? ddmmyyFormat(String? datePick) {
+  // to select date and shoe in ddmmyy format
+  // Add your function code here!
+  DateFormat inputFormat = DateFormat("yMd");
+  DateFormat outputFormat = DateFormat("dd-MM-yyyy");
+  DateFormat fullOutputFormat = DateFormat("dd-MM-yyyy");
+  DateTime date = inputFormat.parse(datePick!);
+  var dateString = outputFormat.format(date);
+  var dateTimeString = fullOutputFormat.format(date);
+  print("Formatted date : $dateTimeString");
+  return dateTimeString;
+}

@@ -1,6 +1,6 @@
-import '../components/modal_activity_widget.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
+import '/components/modal_activity_widget.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -59,8 +59,8 @@ class _NotificationTriggerWidgetState extends State<NotificationTriggerWidget> {
       showBadge: true,
       shape: badges.BadgeShape.circle,
       badgeColor: FlutterFlowTheme.of(context).alternate,
-      elevation: 4,
-      padding: EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
+      elevation: 4.0,
+      padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
       position: badges.BadgePosition.topEnd(),
       animationType: badges.BadgeAnimationType.scale,
       toAnimate: true,
@@ -85,19 +85,19 @@ class _NotificationTriggerWidgetState extends State<NotificationTriggerWidget> {
         child: Stack(
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(12, 12, 12, 12),
+              padding: EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
               child: Icon(
                 Icons.notifications_none,
                 color: FlutterFlowTheme.of(context).secondaryText,
-                size: 24,
+                size: 24.0,
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(12, 12, 12, 12),
+              padding: EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
               child: Icon(
                 Icons.notifications,
                 color: FlutterFlowTheme.of(context).primaryText,
-                size: 24,
+                size: 24.0,
               ),
             ),
           ],

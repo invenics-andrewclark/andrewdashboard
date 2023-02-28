@@ -1,6 +1,6 @@
-import '../flutter_flow/flutter_flow_animations.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_animations.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -28,15 +28,15 @@ class _TaskComponentWidgetState extends State<TaskComponentWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: 0,
-          end: 1,
+          begin: 0.0,
+          end: 1.0,
         ),
         MoveEffect(
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0, 30),
-          end: Offset(0, 0),
+          begin: Offset(0.0, 30.0),
+          end: Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -75,19 +75,19 @@ class _TaskComponentWidgetState extends State<TaskComponentWidget>
     context.watch<FFAppState>();
 
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
+      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
       child: Container(
         width: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(12.0),
           border: Border.all(
             color: FlutterFlowTheme.of(context).lineColor,
-            width: 2,
+            width: 2.0,
           ),
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(12, 12, 12, 12),
+          padding: EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -98,7 +98,8 @@ class _TaskComponentWidgetState extends State<TaskComponentWidget>
                 children: [
                   Expanded(
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
                           'u1d84lda' /* Issue #242952592 */,
@@ -110,7 +111,7 @@ class _TaskComponentWidgetState extends State<TaskComponentWidget>
                 ],
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
                     'zcne4fq0' /* Andres Reynolds */,
@@ -119,8 +120,8 @@ class _TaskComponentWidgetState extends State<TaskComponentWidget>
                 ),
               ),
               Divider(
-                height: 24,
-                thickness: 1,
+                height: 24.0,
+                thickness: 1.0,
                 color: FlutterFlowTheme.of(context).lineColor,
               ),
               Row(
@@ -140,7 +141,7 @@ class _TaskComponentWidgetState extends State<TaskComponentWidget>
                         ),
                   ),
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
+                    padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
                     child: Text(
                       FFLocalizations.of(context).getText(
                         'ybk6v4cb' /* Tuesday, 10:00am */,
@@ -149,7 +150,7 @@ class _TaskComponentWidgetState extends State<TaskComponentWidget>
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                    padding: EdgeInsetsDirectional.fromSTEB(4.0, 0.0, 0.0, 0.0),
                     child: Text(
                       FFLocalizations.of(context).getText(
                         'gc15j92x' /* Tuesday, 10:00am */,
@@ -160,7 +161,7 @@ class _TaskComponentWidgetState extends State<TaskComponentWidget>
                   Icon(
                     Icons.keyboard_arrow_right_rounded,
                     color: FlutterFlowTheme.of(context).secondaryText,
-                    size: 24,
+                    size: 24.0,
                   ),
                 ],
               ),

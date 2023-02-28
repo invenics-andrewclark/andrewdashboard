@@ -1,15 +1,16 @@
-import '../auth/auth_util.dart';
-import '../backend/api_requests/api_calls.dart';
-import '../backend/firebase_storage/storage.dart';
-import '../flutter_flow/flutter_flow_animations.dart';
-import '../flutter_flow/flutter_flow_drop_down.dart';
-import '../flutter_flow/flutter_flow_icon_button.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
-import '../flutter_flow/flutter_flow_widgets.dart';
-import '../flutter_flow/upload_media.dart';
+import '/auth/auth_util.dart';
+import '/backend/api_requests/api_calls.dart';
+import '/backend/backend.dart';
+import '/backend/firebase_storage/storage.dart';
+import '/flutter_flow/flutter_flow_animations.dart';
+import '/flutter_flow/flutter_flow_drop_down.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import '/flutter_flow/upload_media.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_debounce/easy_debounce.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -28,13 +29,15 @@ class AddWorkerModel extends FlutterFlowModel {
   // State field(s) for workerName widget.
   TextEditingController? workerNameController;
   String? Function(BuildContext, String?)? workerNameControllerValidator;
-  // State field(s) for workeMobilePhone widget.
-  TextEditingController? workeMobilePhoneController;
-  String? Function(BuildContext, String?)? workeMobilePhoneControllerValidator;
+  // State field(s) for workerPhone widget.
+  TextEditingController? workerPhoneController;
+  String? Function(BuildContext, String?)? workerPhoneControllerValidator;
   // State field(s) for workerEmail widget.
   TextEditingController? workerEmailController;
   String? Function(BuildContext, String?)? workerEmailControllerValidator;
-  DateTime? datePicked;
+  // State field(s) for titleRole widget.
+  TextEditingController? titleRoleController;
+  String? Function(BuildContext, String?)? titleRoleControllerValidator;
   // State field(s) for workerGender widget.
   String? workerGenderValue;
   // State field(s) for workerPinCode widget.
@@ -68,8 +71,9 @@ class AddWorkerModel extends FlutterFlowModel {
 
   void dispose() {
     workerNameController?.dispose();
-    workeMobilePhoneController?.dispose();
+    workerPhoneController?.dispose();
     workerEmailController?.dispose();
+    titleRoleController?.dispose();
     workerPinCodeController?.dispose();
     workerAadharController?.dispose();
     workerPanNumberController?.dispose();

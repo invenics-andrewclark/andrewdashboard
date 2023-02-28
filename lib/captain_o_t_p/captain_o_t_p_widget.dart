@@ -1,9 +1,9 @@
-import '../auth/auth_util.dart';
-import '../backend/backend.dart';
-import '../flutter_flow/flutter_flow_icon_button.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
-import '../flutter_flow/flutter_flow_widgets.dart';
+import '/auth/auth_util.dart';
+import '/backend/backend.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -86,7 +86,7 @@ class _CaptainOTPWidgetState extends State<CaptainOTPWidget> {
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(100),
+        preferredSize: Size.fromHeight(100.0),
         child: AppBar(
           backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
           automaticallyImplyLeading: false,
@@ -98,21 +98,22 @@ class _CaptainOTPWidgetState extends State<CaptainOTPWidget> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
                         child: FlutterFlowIconButton(
                           borderColor: Colors.transparent,
-                          borderRadius: 30,
-                          borderWidth: 1,
-                          buttonSize: 50,
+                          borderRadius: 30.0,
+                          borderWidth: 1.0,
+                          buttonSize: 50.0,
                           icon: Icon(
                             Icons.arrow_back_rounded,
                             color: FlutterFlowTheme.of(context).primaryText,
-                            size: 24,
+                            size: 24.0,
                           ),
                           onPressed: () async {
                             context.pop();
@@ -120,7 +121,8 @@ class _CaptainOTPWidgetState extends State<CaptainOTPWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(4.0, 0.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
                             'iv0ab7pf' /* Back */,
@@ -128,7 +130,7 @@ class _CaptainOTPWidgetState extends State<CaptainOTPWidget> {
                           style: FlutterFlowTheme.of(context).title1.override(
                                 fontFamily:
                                     FlutterFlowTheme.of(context).title1Family,
-                                fontSize: 16,
+                                fontSize: 16.0,
                                 useGoogleFonts: GoogleFonts.asMap().containsKey(
                                     FlutterFlowTheme.of(context).title1Family),
                               ),
@@ -142,19 +144,19 @@ class _CaptainOTPWidgetState extends State<CaptainOTPWidget> {
             centerTitle: true,
             expandedTitleScale: 1.0,
           ),
-          elevation: 0,
+          elevation: 0.0,
         ),
       ),
       body: Align(
-        alignment: AlignmentDirectional(0, 0),
+        alignment: AlignmentDirectional(0.0, 0.0),
         child: Container(
           width: double.infinity,
           constraints: BoxConstraints(
-            maxWidth: 570,
+            maxWidth: 570.0,
           ),
           decoration: BoxDecoration(),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 32),
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 32.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -165,21 +167,22 @@ class _CaptainOTPWidgetState extends State<CaptainOTPWidget> {
                   tablet: false,
                 ))
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              12.0, 0.0, 0.0, 0.0),
                           child: FlutterFlowIconButton(
                             borderColor: Colors.transparent,
-                            borderRadius: 30,
-                            borderWidth: 1,
-                            buttonSize: 50,
+                            borderRadius: 30.0,
+                            borderWidth: 1.0,
+                            buttonSize: 50.0,
                             icon: Icon(
                               Icons.arrow_back_rounded,
                               color: FlutterFlowTheme.of(context).primaryText,
-                              size: 24,
+                              size: 24.0,
                             ),
                             onPressed: () async {
                               context.pop();
@@ -187,7 +190,8 @@ class _CaptainOTPWidgetState extends State<CaptainOTPWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              4.0, 0.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
                               '57wwhpbl' /* Back */,
@@ -195,7 +199,7 @@ class _CaptainOTPWidgetState extends State<CaptainOTPWidget> {
                             style: FlutterFlowTheme.of(context).title1.override(
                                   fontFamily:
                                       FlutterFlowTheme.of(context).title1Family,
-                                  fontSize: 16,
+                                  fontSize: 16.0,
                                   useGoogleFonts: GoogleFonts.asMap()
                                       .containsKey(FlutterFlowTheme.of(context)
                                           .title1Family),
@@ -206,21 +210,22 @@ class _CaptainOTPWidgetState extends State<CaptainOTPWidget> {
                     ),
                   ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(24, 0, 0, 0),
+                  padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       '85fs7zl8' /* One Time Password */,
                     ),
                     style: FlutterFlowTheme.of(context).title1.override(
                           fontFamily: FlutterFlowTheme.of(context).title1Family,
-                          fontSize: 32,
+                          fontSize: 32.0,
                           useGoogleFonts: GoogleFonts.asMap().containsKey(
                               FlutterFlowTheme.of(context).title1Family),
                         ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(24, 6, 24, 16),
+                  padding:
+                      EdgeInsetsDirectional.fromSTEB(24.0, 6.0, 24.0, 16.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'ndjnc0q0' /* We will send you a text messag... */,
@@ -230,20 +235,20 @@ class _CaptainOTPWidgetState extends State<CaptainOTPWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(24, 4, 24, 0),
+                  padding: EdgeInsetsDirectional.fromSTEB(24.0, 4.0, 24.0, 0.0),
                   child: Container(
                     width: double.infinity,
-                    height: 60,
+                    height: 60.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
                       boxShadow: [
                         BoxShadow(
-                          blurRadius: 5,
+                          blurRadius: 5.0,
                           color: Color(0x4D101213),
-                          offset: Offset(0, 2),
+                          offset: Offset(0.0, 2.0),
                         )
                       ],
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(8.0),
                     ),
                     child: TextFormField(
                       controller: _model.otpFieldController,
@@ -258,7 +263,7 @@ class _CaptainOTPWidgetState extends State<CaptainOTPWidget> {
                             .override(
                               fontFamily: 'Lexend Deca',
                               color: Color(0xFF57636C),
-                              fontSize: 14,
+                              fontSize: 14.0,
                               fontWeight: FontWeight.normal,
                               useGoogleFonts: GoogleFonts.asMap().containsKey(
                                   FlutterFlowTheme.of(context).bodyText1Family),
@@ -266,36 +271,36 @@ class _CaptainOTPWidgetState extends State<CaptainOTPWidget> {
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
                             color: Color(0x00000000),
-                            width: 0,
+                            width: 0.0,
                           ),
-                          borderRadius: BorderRadius.circular(12),
+                          borderRadius: BorderRadius.circular(12.0),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(
                             color: Color(0x00000000),
-                            width: 0,
+                            width: 0.0,
                           ),
-                          borderRadius: BorderRadius.circular(12),
+                          borderRadius: BorderRadius.circular(12.0),
                         ),
                         errorBorder: OutlineInputBorder(
                           borderSide: BorderSide(
                             color: Color(0x00000000),
-                            width: 0,
+                            width: 0.0,
                           ),
-                          borderRadius: BorderRadius.circular(12),
+                          borderRadius: BorderRadius.circular(12.0),
                         ),
                         focusedErrorBorder: OutlineInputBorder(
                           borderSide: BorderSide(
                             color: Color(0x00000000),
-                            width: 0,
+                            width: 0.0,
                           ),
-                          borderRadius: BorderRadius.circular(12),
+                          borderRadius: BorderRadius.circular(12.0),
                         ),
                         filled: true,
                         fillColor:
                             FlutterFlowTheme.of(context).secondaryBackground,
-                        contentPadding:
-                            EdgeInsetsDirectional.fromSTEB(24, 24, 20, 24),
+                        contentPadding: EdgeInsetsDirectional.fromSTEB(
+                            24.0, 24.0, 20.0, 24.0),
                       ),
                       style: FlutterFlowTheme.of(context).bodyText1,
                       validator: _model.otpFieldControllerValidator
@@ -304,9 +309,10 @@ class _CaptainOTPWidgetState extends State<CaptainOTPWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0, 0),
+                  alignment: AlignmentDirectional(0.0, 0.0),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         GoRouter.of(context).prepareAuthEvent();
@@ -330,7 +336,7 @@ class _CaptainOTPWidgetState extends State<CaptainOTPWidget> {
                         final captainsCreateData = createCaptainsRecordData(
                           fullName: widget.captainFullName,
                           phone: widget.captainMobilePhone,
-                          dob: widget.captainDOB,
+                          dob: widget.captainDOB?.toString(),
                           gender: widget.captainGender,
                           photo: widget.captainPhoto,
                           email: widget.captainEmail,
@@ -360,8 +366,12 @@ class _CaptainOTPWidgetState extends State<CaptainOTPWidget> {
                         'co5i1a1d' /* Submit */,
                       ),
                       options: FFButtonOptions(
-                        width: 270,
-                        height: 50,
+                        width: 270.0,
+                        height: 50.0,
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryColor,
                         textStyle: FlutterFlowTheme.of(context)
                             .subtitle2
@@ -372,12 +382,12 @@ class _CaptainOTPWidgetState extends State<CaptainOTPWidget> {
                               useGoogleFonts: GoogleFonts.asMap().containsKey(
                                   FlutterFlowTheme.of(context).subtitle2Family),
                             ),
-                        elevation: 3,
+                        elevation: 3.0,
                         borderSide: BorderSide(
                           color: Colors.transparent,
-                          width: 1,
+                          width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(50),
+                        borderRadius: BorderRadius.circular(50.0),
                       ),
                     ),
                   ),

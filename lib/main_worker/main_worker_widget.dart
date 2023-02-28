@@ -1,11 +1,9 @@
-import '../backend/backend.dart';
-import '../components/drawer_nav_widget.dart';
-import '../components/notification_trigger_widget.dart';
-import '../components/user_card_widget.dart';
-import '../components/web_nav_widget.dart';
-import '../flutter_flow/flutter_flow_icon_button.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
+import '/backend/backend.dart';
+import '/components/drawer_nav_widget.dart';
+import '/components/web_nav_widget.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
@@ -67,16 +65,16 @@ class _MainWorkerWidgetState extends State<MainWorkerWidget> {
             );
           },
           backgroundColor: FlutterFlowTheme.of(context).primaryColor,
-          elevation: 8,
+          elevation: 8.0,
           child: Icon(
             Icons.add_rounded,
             color: Colors.white,
-            size: 36,
+            size: 36.0,
           ),
         ),
       ),
       drawer: Drawer(
-        elevation: 16,
+        elevation: 16.0,
         child: wrapWithModel(
           model: _model.drawerNavModel,
           updateCallback: () => setState(() {}),
@@ -101,10 +99,12 @@ class _MainWorkerWidgetState extends State<MainWorkerWidget> {
                   navColorOne: FlutterFlowTheme.of(context).secondaryText,
                   navBgTwo: FlutterFlowTheme.of(context).secondaryBackground,
                   navColorTwo: FlutterFlowTheme.of(context).secondaryText,
-                  navBgThree: FlutterFlowTheme.of(context).primaryBackground,
-                  navColorThree: FlutterFlowTheme.of(context).alternate,
-                  navColorFour: FlutterFlowTheme.of(context).secondaryText,
-                  navBGFour: FlutterFlowTheme.of(context).secondaryBackground,
+                  navBgThree: FlutterFlowTheme.of(context).secondaryBackground,
+                  navColorThree: FlutterFlowTheme.of(context).secondaryText,
+                  navColorFour: FlutterFlowTheme.of(context).primaryColor,
+                  navBGFour: FlutterFlowTheme.of(context).primaryBackground,
+                  navBGFive: FlutterFlowTheme.of(context).secondaryBackground,
+                  navColorFive: FlutterFlowTheme.of(context).secondaryText,
                 ),
               ),
             Expanded(
@@ -126,15 +126,15 @@ class _MainWorkerWidgetState extends State<MainWorkerWidget> {
                         ))
                           Container(
                             width: double.infinity,
-                            height: 40,
+                            height: 40.0,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .primaryBackground,
                             ),
                           ),
                         Padding(
-                          padding:
-                              EdgeInsetsDirectional.fromSTEB(16, 24, 16, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              16.0, 24.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -149,11 +149,6 @@ class _MainWorkerWidgetState extends State<MainWorkerWidget> {
                                   ),
                                   style: FlutterFlowTheme.of(context).title2,
                                 ),
-                              wrapWithModel(
-                                model: _model.notificationTriggerModel,
-                                updateCallback: () => setState(() {}),
-                                child: NotificationTriggerWidget(),
-                              ),
                             ],
                           ),
                         ),
@@ -164,28 +159,14 @@ class _MainWorkerWidgetState extends State<MainWorkerWidget> {
                           desktop: false,
                         ))
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(16, 0, 16, 4),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                16.0, 0.0, 16.0, 4.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 12, 0),
-                                  child: InkWell(
-                                    onTap: () async {
-                                      scaffoldKey.currentState!.openDrawer();
-                                    },
-                                    child: wrapWithModel(
-                                      model: _model.userCardModel,
-                                      updateCallback: () => setState(() {}),
-                                      child: UserCardWidget(),
-                                    ),
-                                  ),
-                                ),
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    'vatm8d7g' /* My Team */,
+                                    'vatm8d7g' /* My Workers */,
                                   ),
                                   style: FlutterFlowTheme.of(context).title2,
                                 ),
@@ -193,8 +174,8 @@ class _MainWorkerWidgetState extends State<MainWorkerWidget> {
                             ),
                           ),
                         Padding(
-                          padding:
-                              EdgeInsetsDirectional.fromSTEB(16, 8, 16, 12),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              16.0, 8.0, 16.0, 12.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
@@ -218,30 +199,30 @@ class _MainWorkerWidgetState extends State<MainWorkerWidget> {
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
-                                        width: 1,
+                                        width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(12),
+                                      borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
-                                        width: 1,
+                                        width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(12),
+                                      borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
-                                        width: 1,
+                                        width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(12),
+                                      borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
-                                        width: 1,
+                                        width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(12),
+                                      borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     filled: true,
                                     fillColor: FlutterFlowTheme.of(context)
@@ -253,18 +234,18 @@ class _MainWorkerWidgetState extends State<MainWorkerWidget> {
                                 ),
                               ),
                               Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    12.0, 0.0, 0.0, 0.0),
                                 child: FlutterFlowIconButton(
                                   borderColor: Colors.transparent,
-                                  borderRadius: 30,
-                                  borderWidth: 1,
-                                  buttonSize: 44,
+                                  borderRadius: 30.0,
+                                  borderWidth: 1.0,
+                                  buttonSize: 44.0,
                                   icon: Icon(
                                     Icons.search_rounded,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
-                                    size: 24,
+                                    size: 24.0,
                                   ),
                                   onPressed: () {
                                     print('IconButton pressed ...');
@@ -278,7 +259,8 @@ class _MainWorkerWidgetState extends State<MainWorkerWidget> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(24, 0, 0, 0),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
                     child: Text(
                       FFLocalizations.of(context).getText(
                         'n0inmm7b' /* Find Members */,
@@ -288,7 +270,8 @@ class _MainWorkerWidgetState extends State<MainWorkerWidget> {
                   ),
                   Expanded(
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                       child: StreamBuilder<List<WorkersRecord>>(
                         stream: queryWorkersRecord(),
                         builder: (context, snapshot) {
@@ -296,8 +279,8 @@ class _MainWorkerWidgetState extends State<MainWorkerWidget> {
                           if (!snapshot.hasData) {
                             return Center(
                               child: SizedBox(
-                                width: 50,
-                                height: 50,
+                                width: 50.0,
+                                height: 50.0,
                                 child: CircularProgressIndicator(
                                   color:
                                       FlutterFlowTheme.of(context).primaryColor,
@@ -317,7 +300,7 @@ class _MainWorkerWidgetState extends State<MainWorkerWidget> {
                                   listViewWorkersRecordList[listViewIndex];
                               return Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    16, 4, 16, 8),
+                                    16.0, 4.0, 16.0, 8.0),
                                 child: InkWell(
                                   onTap: () async {
                                     context.pushNamed(
@@ -343,48 +326,64 @@ class _MainWorkerWidgetState extends State<MainWorkerWidget> {
                                     );
                                   },
                                   child: Container(
-                                    width: 400,
-                                    height: 60,
+                                    width: 400.0,
+                                    height: 60.0,
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
                                       boxShadow: [
                                         BoxShadow(
-                                          blurRadius: 4,
+                                          blurRadius: 4.0,
                                           color: Color(0x32000000),
-                                          offset: Offset(0, 2),
+                                          offset: Offset(0.0, 2.0),
                                         )
                                       ],
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(8.0),
                                       border: Border.all(
                                         color: FlutterFlowTheme.of(context)
                                             .primaryBackground,
-                                        width: 1,
+                                        width: 1.0,
                                       ),
                                     ),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          8, 0, 8, 0),
+                                          8.0, 0.0, 8.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
                                             MainAxisAlignment.start,
                                         children: [
-                                          ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(26),
-                                            child: CachedNetworkImage(
-                                              imageUrl:
-                                                  listViewWorkersRecord.photo!,
-                                              width: 36,
-                                              height: 36,
-                                              fit: BoxFit.cover,
+                                          if (listViewWorkersRecord.photo ==
+                                                  null ||
+                                              listViewWorkersRecord.photo == '')
+                                            ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(26.0),
+                                              child: Image.asset(
+                                                'assets/images/MicrosoftTeams-image_(5).png',
+                                                width: 36.0,
+                                                height: 36.0,
+                                                fit: BoxFit.cover,
+                                              ),
                                             ),
-                                          ),
+                                          if (listViewWorkersRecord.photo !=
+                                                  null &&
+                                              listViewWorkersRecord.photo != '')
+                                            ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(26.0),
+                                              child: CachedNetworkImage(
+                                                imageUrl: listViewWorkersRecord
+                                                    .photo!,
+                                                width: 36.0,
+                                                height: 36.0,
+                                                fit: BoxFit.cover,
+                                              ),
+                                            ),
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    12, 0, 0, 0),
+                                                    12.0, 0.0, 0.0, 0.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -404,9 +403,11 @@ class _MainWorkerWidgetState extends State<MainWorkerWidget> {
                                                 ),
                                                 Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(0, 4, 0, 0),
+                                                      .fromSTEB(
+                                                          0.0, 4.0, 0.0, 0.0),
                                                   child: Text(
-                                                    listViewWorkersRecord.area!,
+                                                    listViewWorkersRecord
+                                                        .phone!,
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .bodyText2,

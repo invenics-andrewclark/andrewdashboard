@@ -109,127 +109,127 @@ Locale createLocale(String language) => language.contains('_')
 final kTranslationsMap = <Map<String, Map<String, String>>>[
   // login
   {
-    'awn1ttmh': {
+    'hg38xv11': {
       'en': 'Enter your credentials to access your account.',
       'hi': 'स्वागत है, और नीचे अपने खाते तक पहुंचें।',
       'ta': 'வரவேற்கிறோம், கீழே உள்ள உங்கள் கணக்கை அணுகவும்.',
       'ur': 'خوش آمدید، اور نیچے اپنے اکاؤنٹ تک رسائی حاصل کریں۔',
     },
-    '7coe115q': {
+    'k9f7l4nt': {
       'en': 'Sign In',
       'hi': 'साइन इन करें',
       'ta': 'உள்நுழையவும்',
       'ur': 'سائن ان',
     },
-    'e9pnyzm9': {
+    'iln56iwm': {
       'en': '',
       'hi': 'ईमेल पता',
       'ta': 'மின்னஞ்சல் முகவரி',
       'ur': 'ای میل اڈریس',
     },
-    'vuhwdlzn': {
+    'yp39ekyy': {
       'en': 'Email Address',
       'hi': '',
       'ta': '',
       'ur': '',
     },
-    'z0v8ougp': {
+    'asfvlblu': {
       'en': '',
       'hi': 'पासवर्ड',
       'ta': 'கடவுச்சொல்',
       'ur': 'پاس ورڈ',
     },
-    '3mg9dzti': {
+    'kr3sgnw0': {
       'en': 'Password',
       'hi': '',
       'ta': '',
       'ur': '',
     },
-    'd7zjcwes': {
+    '9m0a1d6n': {
       'en': 'Sign In',
       'hi': 'साइन इन करें',
       'ta': 'உள்நுழையவும்',
       'ur': 'سائن ان',
     },
-    'xou1jnyc': {
-      'en': 'Forgot Password',
-      'hi': 'साइन इन करें',
-      'ta': 'உள்நுழையவும்',
-      'ur': 'سائن ان',
+    '0r8t4eat': {
+      'en': 'Forgot Password?',
+      'hi': '',
+      'ta': '',
+      'ur': '',
     },
-    'mnrqbvlk': {
+    'gdds3pa0': {
       'en': 'Sign Up',
       'hi': 'साइन अप करें',
       'ta': 'பதிவு செய்யவும்',
       'ur': 'سائن اپ',
     },
-    'ye7jjwdc': {
+    'osu0i9jf': {
       'en': '',
       'hi': 'ईमेल पता',
       'ta': 'மின்னஞ்சல் முகவரி',
       'ur': 'ای میل اڈریس',
     },
-    '4u8srye4': {
+    '3eksnf44': {
       'en': 'Email Address',
       'hi': '',
       'ta': '',
       'ur': '',
     },
-    'y4q7638d': {
+    'qmufuubm': {
       'en': '',
       'hi': 'पासवर्ड',
       'ta': 'கடவுச்சொல்',
       'ur': 'پاس ورڈ',
     },
-    '2b9s0vl5': {
+    '7b6wxw4b': {
       'en': 'Password',
       'hi': '',
       'ta': '',
       'ur': '',
     },
-    'ffc8ingn': {
+    'no1ntlls': {
       'en': 'Create Account',
       'hi': 'खाता बनाएं',
       'ta': 'உங்கள் கணக்கை துவங்குங்கள்',
       'ur': 'اکاؤنٹ بنائیں',
     },
-    'tazfclws': {
+    'houhzb6v': {
       'en': 'Field is required',
       'hi': '',
       'ta': '',
       'ur': '',
     },
-    '64wzffab': {
+    's8v0a5hy': {
       'en': 'Email address should be minimum 5 characters',
       'hi': '',
       'ta': '',
       'ur': '',
     },
-    'anmgh4rt': {
+    '4wo82b1e': {
       'en': 'email address is too long',
       'hi': '',
       'ta': '',
       'ur': '',
     },
-    'niw2rp7x': {
+    'w21iqcg0': {
       'en': 'Email seems to be invalid. Please check',
       'hi': '',
       'ta': '',
       'ur': '',
     },
-    '0erhnun6': {
+    '7bsvoomv': {
       'en': 'Field is required',
       'hi': '',
       'ta': '',
       'ur': '',
     },
-    'mw32hvo4': {
+    'vyebgthd': {
       'en': 'Field is required',
       'hi': '',
       'ta': '',
       'ur': '',
     },
-    'rklj8lg5': {
+    '938u1yyy': {
       'en': 'Field is required',
       'hi': '',
       'ta': '',
@@ -287,23 +287,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // mainActivityTracker
   {
-    '12tkp77z': {
-      'en': 'Welcome Back!',
-      'hi': 'सुबह बख़ैर',
-      'ta': 'காலை வணக்கம்',
-      'ur': 'صبح بخیر',
-    },
     'qivbgraj': {
-      'en': 'My Tasks',
+      'en': 'My Jobs',
       'hi': 'मेरा काम',
       'ta': 'எனது பணிகள்',
       'ur': 'میرے کام',
-    },
-    'nvtbodh9': {
-      'en': 'Issue #242952592',
-      'hi': '',
-      'ta': '',
-      'ur': '',
     },
     'kvvcugxf': {
       'en': 'In Progress',
@@ -311,26 +299,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'ur': '',
     },
-    '7iwf9jr2': {
-      'en': 'Andres Reynolds',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
     'uwyvo6wk': {
-      'en': 'Due',
+      'en': 'Duration',
       'hi': 'बकाया',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
     },
-    'el07c39q': {
-      'en': 'Tuesday, 10:00am',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '19bwy5lk': {
-      'en': 'Tuesday, 10:00am',
+    't2wjobrx': {
+      'en': '- ',
       'hi': '',
       'ta': '',
       'ur': '',
@@ -371,35 +347,17 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'துவங்கவில்லை',
       'ur': 'شروع نہیں کیا',
     },
-    'i97bxfdh': {
-      'en': 'Issue #242952592',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
     '832adtr2': {
       'en': 'Start',
       'hi': 'शुरू',
       'ta': 'தொடங்கு',
       'ur': 'شروع کریں۔',
     },
-    'blt2ezeq': {
-      'en': 'Not Assigned',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
     '1460lgka': {
-      'en': 'Due',
+      'en': 'Start Date:',
       'hi': 'बकाया',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
-    },
-    '19bl1hdz': {
-      'en': 'Tuesday, 10:00am',
-      'hi': '',
-      'ta': '',
-      'ur': '',
     },
     'wm00imuu': {
       'en': 'In Progress',
@@ -407,38 +365,20 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'செயல்பாட்டில் உள்ளது',
       'ur': 'کام جاری ہے',
     },
-    'f34z7i8r': {
-      'en': 'Issue #242952592',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
     'o0nbp5ga': {
       'en': 'In Progress',
       'hi': '',
       'ta': '',
       'ur': '',
     },
-    'g2vnsjav': {
-      'en': 'Andres Reynolds',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
     'c8gv1fmj': {
-      'en': 'Due',
+      'en': 'Duration:',
       'hi': 'बकाया',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
     },
-    'ywu9zh7m': {
-      'en': 'Tuesday, 10:00am',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '7dku54x3': {
-      'en': 'Tuesday, 10:00am',
+    '5dian856': {
+      'en': '- ',
       'hi': '',
       'ta': '',
       'ur': '',
@@ -479,41 +419,17 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'முழுமை',
       'ur': 'مکمل',
     },
-    'twgo9kqb': {
-      'en': 'Issue #242952592',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
     'hkcnmvtg': {
       'en': 'Complete',
       'hi': 'पूरा',
       'ta': 'முழுமை',
       'ur': 'مکمل',
     },
-    'nsjg7le8': {
-      'en': 'Andres Reynolds',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
     'htuk5fl0': {
-      'en': 'Due',
+      'en': 'End Date:',
       'hi': 'बकाया',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
-    },
-    'qg277w7k': {
-      'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'izdn1vgb': {
-      'en': 'Tuesday, 10:00am',
-      'hi': '',
-      'ta': '',
-      'ur': '',
     },
     'xe34smbh': {
       'en': 'My Tasks',
@@ -611,6 +527,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'செயல்பாட்டில் உள்ளது',
       'ur': 'کام جاری ہے',
     },
+    '05qe5qgv': {
+      'en': 'In Progress',
+      'hi': 'शुरू',
+      'ta': 'தொடங்கு',
+      'ur': 'شروع کریں۔',
+    },
     'b8974iek': {
       'en': 'End Date',
       'hi': 'बकाया',
@@ -652,6 +574,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'hi': 'पूरा हुआ',
       'ta': 'நிறைவு',
       'ur': 'مکمل',
+    },
+    '4r1xiwhr': {
+      'en': 'Complete',
+      'hi': 'शुरू',
+      'ta': 'தொடங்கு',
+      'ur': 'شروع کریں۔',
     },
     '9bhl3dkx': {
       'en': 'End Date',
@@ -899,6 +827,24 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'தலைப்பு அல்லது பாத்திரம்',
       'ur': 'عنوان یا کردار',
     },
+    'di62rw8j': {
+      'en': 'Area',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'ne5vgnk3': {
+      'en': 'State',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    '6xeh7mot': {
+      'en': 'District',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
     'e5dcw7vu': {
       'en': 'Food',
       'hi': '',
@@ -1102,6 +1048,51 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'گھر',
     },
   },
+  // myProfile
+  {
+    '5n51xmhd': {
+      'en': 'Switch to Dark Mode',
+      'hi': 'डार्क मोड में स्विच करें',
+      'ta': 'டார்க் பயன்முறைக்கு மாறவும்',
+      'ur': 'ڈارک موڈ پر سوئچ کریں۔',
+    },
+    'w3vpe9rl': {
+      'en': 'Switch to Light Mode',
+      'hi': 'लाइट मोड में स्विच करें',
+      'ta': 'லைட் பயன்முறைக்கு மாறவும்',
+      'ur': 'لائٹ موڈ پر سوئچ کریں۔',
+    },
+    '05v307ij': {
+      'en': 'Account Settings',
+      'hi': 'अकाउंट सेटिंग',
+      'ta': 'கணக்கு அமைப்புகள்',
+      'ur': 'اکاؤنٹ کی ترتیبات',
+    },
+    'o1pcrlaz': {
+      'en': 'Change Password',
+      'hi': 'पासवर्ड बदलें',
+      'ta': 'கடவுச்சொல்லை மாற்று',
+      'ur': 'پاس ورڈ تبدیل کریں',
+    },
+    'alhgf413': {
+      'en': 'Edit Profile',
+      'hi': 'प्रोफ़ाइल संपादित करें',
+      'ta': 'சுயவிவரத்தைத் திருத்து',
+      'ur': 'پروفائل میں ترمیم کریں',
+    },
+    'w4vsr6hu': {
+      'en': 'Log Out',
+      'hi': 'लॉग आउट',
+      'ta': 'வெளியேறு',
+      'ur': 'لاگ آوٹ',
+    },
+    '3e1n01mf': {
+      'en': 'Home',
+      'hi': 'घर',
+      'ta': 'வீடு',
+      'ur': 'گھر',
+    },
+  },
   // addCaptain
   {
     'dzbojo7r': {
@@ -1249,49 +1240,70 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'فیلڈ کی ضرورت ہے',
     },
   },
-  // myProfile
+  // mainCaptain
   {
-    '5n51xmhd': {
-      'en': 'Switch to Dark Mode',
-      'hi': 'डार्क मोड में स्विच करें',
-      'ta': 'டார்க் பயன்முறைக்கு மாறவும்',
-      'ur': 'ڈارک موڈ پر سوئچ کریں۔',
+    'o4agumg5': {
+      'en': 'My Captains',
+      'hi': 'मेरी टीम',
+      'ta': 'என் அணி',
+      'ur': 'میری ٹیم',
     },
-    'w3vpe9rl': {
-      'en': 'Switch to Light Mode',
-      'hi': 'लाइट मोड में स्विच करें',
-      'ta': 'லைட் பயன்முறைக்கு மாறவும்',
-      'ur': 'لائٹ موڈ پر سوئچ کریں۔',
+    'h4vrw93q': {
+      'en': 'My Captains',
+      'hi': 'मेरी टीम',
+      'ta': 'என் அணி',
+      'ur': 'میری ٹیم',
     },
-    '05v307ij': {
-      'en': 'Account Settings',
-      'hi': 'अकाउंट सेटिंग',
-      'ta': 'கணக்கு அமைப்புகள்',
-      'ur': 'اکاؤنٹ کی ترتیبات',
+    '0st3yqow': {
+      'en': 'Search members...',
+      'hi': 'सदस्यों को खोजें...',
+      'ta': 'உறுப்பினர்களைத் தேடு...',
+      'ur': 'اراکین کو تلاش کریں...',
     },
-    'o1pcrlaz': {
-      'en': 'Change Password',
-      'hi': 'पासवर्ड बदलें',
-      'ta': 'கடவுச்சொல்லை மாற்று',
-      'ur': 'پاس ورڈ تبدیل کریں',
+    'hw94eld1': {
+      'en': 'Find Members',
+      'hi': 'सदस्य खोजें',
+      'ta': 'உறுப்பினர்களைக் கண்டறியவும்',
+      'ur': 'ممبرز تلاش کریں۔',
     },
-    'alhgf413': {
-      'en': 'Edit Profile',
-      'hi': 'प्रोफ़ाइल संपादित करें',
-      'ta': 'சுயவிவரத்தைத் திருத்து',
-      'ur': 'پروفائل میں ترمیم کریں',
+    '50biycd8': {
+      'en': 'My Team',
+      'hi': 'मेरी टीम',
+      'ta': 'என் அணி',
+      'ur': 'میری ٹیم',
     },
-    'w4vsr6hu': {
-      'en': 'Log Out',
-      'hi': 'लॉग आउट',
-      'ta': 'வெளியேறு',
-      'ur': 'لاگ آوٹ',
+  },
+  // mainScout
+  {
+    '7n1ibily': {
+      'en': 'My Scouts',
+      'hi': 'मेरी टीम',
+      'ta': 'என் அணி',
+      'ur': 'میری ٹیم',
     },
-    '3e1n01mf': {
-      'en': 'Home',
-      'hi': 'घर',
-      'ta': 'வீடு',
-      'ur': 'گھر',
+    'hl30we0n': {
+      'en': 'My Scouts',
+      'hi': 'मेरी टीम',
+      'ta': 'என் அணி',
+      'ur': 'میری ٹیم',
+    },
+    'vle7ekjr': {
+      'en': 'Search members...',
+      'hi': 'सदस्यों को खोजें...',
+      'ta': 'உறுப்பினர்களைத் தேடு...',
+      'ur': 'اراکین کو تلاش کریں...',
+    },
+    'izx89p8n': {
+      'en': 'Find Members',
+      'hi': 'सदस्य खोजें',
+      'ta': 'உறுப்பினர்களைக் கண்டறியவும்',
+      'ur': 'ممبرز تلاش کریں۔',
+    },
+    'xzhfbr1o': {
+      'en': 'My Team',
+      'hi': 'मेरी टीम',
+      'ta': 'என் அணி',
+      'ur': 'میری ٹیم',
     },
   },
   // captainProfile
@@ -1405,70 +1417,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': '',
     },
   },
-  // mainCaptain
+  // mainOrganisationsPage
   {
-    'o4agumg5': {
-      'en': 'My Captains',
-      'hi': 'मेरी टीम',
-      'ta': 'என் அணி',
-      'ur': 'میری ٹیم',
+    'qcd4z131': {
+      'en': 'Organisations',
+      'hi': '',
+      'ta': '',
+      'ur': '',
     },
-    'h4vrw93q': {
-      'en': 'My Team',
-      'hi': 'मेरी टीम',
-      'ta': 'என் அணி',
-      'ur': 'میری ٹیم',
+    '0e5jbrkh': {
+      'en': 'A list of organisations below.',
+      'hi': '',
+      'ta': '',
+      'ur': '',
     },
-    '0st3yqow': {
-      'en': 'Search members...',
-      'hi': 'सदस्यों को खोजें...',
-      'ta': 'உறுப்பினர்களைத் தேடு...',
-      'ur': 'اراکین کو تلاش کریں...',
-    },
-    'hw94eld1': {
-      'en': 'Find Members',
-      'hi': 'सदस्य खोजें',
-      'ta': 'உறுப்பினர்களைக் கண்டறியவும்',
-      'ur': 'ممبرز تلاش کریں۔',
-    },
-    '50biycd8': {
-      'en': 'My Team',
-      'hi': 'मेरी टीम',
-      'ta': 'என் அணி',
-      'ur': 'میری ٹیم',
-    },
-  },
-  // mainScout
-  {
-    '7n1ibily': {
-      'en': 'My Scouts',
-      'hi': 'मेरी टीम',
-      'ta': 'என் அணி',
-      'ur': 'میری ٹیم',
-    },
-    'hl30we0n': {
-      'en': 'My Team',
-      'hi': 'मेरी टीम',
-      'ta': 'என் அணி',
-      'ur': 'میری ٹیم',
-    },
-    'vle7ekjr': {
-      'en': 'Search members...',
-      'hi': 'सदस्यों को खोजें...',
-      'ta': 'உறுப்பினர்களைத் தேடு...',
-      'ur': 'اراکین کو تلاش کریں...',
-    },
-    'izx89p8n': {
-      'en': 'Find Members',
-      'hi': 'सदस्य खोजें',
-      'ta': 'உறுப்பினர்களைக் கண்டறியவும்',
-      'ur': 'ممبرز تلاش کریں۔',
-    },
-    'xzhfbr1o': {
-      'en': 'My Team',
-      'hi': 'मेरी टीम',
-      'ta': 'என் அணி',
-      'ur': 'میری ٹیم',
+    'hmxr55qt': {
+      'en': 'Organisations',
+      'hi': 'घर',
+      'ta': 'வீடு',
+      'ur': 'گھر',
     },
   },
   // mainWorker
@@ -1480,7 +1447,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'میری ٹیم',
     },
     'vatm8d7g': {
-      'en': 'My Team',
+      'en': 'My Workers',
       'hi': 'मेरी टीम',
       'ta': 'என் அணி',
       'ur': 'میری ٹیم',
@@ -1504,45 +1471,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'میری ٹیم',
     },
   },
-  // mainOrganisationsPage
-  {
-    'qcd4z131': {
-      'en': 'Organisations',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '0e5jbrkh': {
-      'en': 'A list of organisations below.',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'yg8dl0w4': {
-      'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '4ds2tx08': {
-      'en': '12 Tasks',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '3orom083': {
-      'en': '30%',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'hmxr55qt': {
-      'en': 'Organisations',
-      'hi': 'घर',
-      'ta': 'வீடு',
-      'ur': 'گھر',
-    },
-  },
   // scoutWorkers
   {
     'zxieytlj': {
@@ -1564,33 +1492,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'واجب الادا',
     },
     '74pvo3q7': {
-      'en': 'Home',
-      'hi': 'घर',
-      'ta': 'வீடு',
-      'ur': 'گھر',
-    },
-  },
-  // workerJobs
-  {
-    '9yqjwx0c': {
-      'en': 'Associated Captain/Scout',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    't8miccra': {
-      'en': 'Applied Jobs',
-      'hi': 'कार्य',
-      'ta': 'பணிகள்',
-      'ur': 'کام',
-    },
-    'at9bdcua': {
-      'en': 'Application Submitted',
-      'hi': 'बकाया',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
-    },
-    'u9iamy0p': {
       'en': 'Home',
       'hi': 'घर',
       'ta': 'வீடு',
@@ -1671,23 +1572,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'நிறைவு',
       'ur': 'مکمل',
     },
-    'odwmsknf': {
-      'en': 'Job Title',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
     'z1qw4qso': {
       'en': 'Completed',
       'hi': 'पूरा',
       'ta': 'முழுமை',
       'ur': 'مکمل',
-    },
-    'laa28b9g': {
-      'en': 'Location',
-      'hi': '',
-      'ta': '',
-      'ur': '',
     },
     'xd0lhmlc': {
       'en': 'Completed on',
@@ -1695,26 +1584,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'அன்று நிறைவடைந்தது',
       'ur': 'پر مکمل ہوا۔',
     },
-    't8fmqhmv': {
-      'en': 'Date',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
     'jbprfbfw': {
       'en': 'Activity',
       'hi': '',
       'ta': '',
       'ur': '',
     },
-    'qnsnjd9q': {
-      'en': 'Current Time',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
     'xo50zn2h': {
-      'en': 'Progress on Schdule',
+      'en': 'Active Workers',
       'hi': '',
       'ta': '',
       'ur': '',
@@ -1744,6 +1621,27 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'پیچھے',
     },
     'l17eg1do': {
+      'en': 'Home',
+      'hi': 'घर',
+      'ta': 'வீடு',
+      'ur': 'گھر',
+    },
+  },
+  // workerJobs
+  {
+    't8miccra': {
+      'en': 'Applied Jobs',
+      'hi': 'कार्य',
+      'ta': 'பணிகள்',
+      'ur': 'کام',
+    },
+    'at9bdcua': {
+      'en': 'Application Submitted',
+      'hi': 'बकाया',
+      'ta': 'காரணமாக',
+      'ur': 'واجب الادا',
+    },
+    'u9iamy0p': {
       'en': 'Home',
       'hi': 'घर',
       'ta': 'வீடு',
@@ -2113,6 +2011,93 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': '',
     },
   },
+  // editOrganisation
+  {
+    'xm0ojz3j': {
+      'en': 'Change Photo',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'veh75wy7': {
+      'en': 'Organisation Details',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    '6um683ot': {
+      'en': 'Organisation Name',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    '0ta1jrhi': {
+      'en': 'Industry 1',
+      'hi': 'टीम 1',
+      'ta': 'அணி 1',
+      'ur': 'ٹیم 1',
+    },
+    'x6qen1nz': {
+      'en': 'Industry 2',
+      'hi': 'टीम 2',
+      'ta': 'அணி 2',
+      'ur': 'ٹیم 2',
+    },
+    '6bwhl89v': {
+      'en': 'Industry 3',
+      'hi': 'टीम 3',
+      'ta': 'அணி 3',
+      'ur': 'ٹیم 3',
+    },
+    '10dlymqa': {
+      'en': 'Select Industry',
+      'hi': 'टीम का चयन',
+      'ta': 'குழுவைத் தேர்ந்தெடுக்கவும்',
+      'ur': 'ٹیم منتخب کریں۔',
+    },
+    '6e96n7qc': {
+      'en': 'Main Contact',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'm0z4pki3': {
+      'en': 'Phone Number',
+      'hi': 'शीर्षक या भूमिका',
+      'ta': 'தலைப்பு அல்லது பாத்திரம்',
+      'ur': 'عنوان یا کردار',
+    },
+    'lxq6gj5n': {
+      'en': 'Email',
+      'hi': 'शीर्षक या भूमिका',
+      'ta': 'தலைப்பு அல்லது பாத்திரம்',
+      'ur': 'عنوان یا کردار',
+    },
+    'e9xqepak': {
+      'en': 'Street Address',
+      'hi': 'शीर्षक या भूमिका',
+      'ta': 'தலைப்பு அல்லது பாத்திரம்',
+      'ur': 'عنوان یا کردار',
+    },
+    'dy9aerlj': {
+      'en': 'Pin Code',
+      'hi': 'शीर्षक या भूमिका',
+      'ta': 'தலைப்பு அல்லது பாத்திரம்',
+      'ur': 'عنوان یا کردار',
+    },
+    'p5k6fbbq': {
+      'en': 'Save Changes',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'kp7ugtjf': {
+      'en': 'Edit Organisation',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+  },
   // editWorkerProfile
   {
     'pvr351jx': {
@@ -2230,222 +2215,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': '',
     },
   },
-  // addWorker
-  {
-    '8i9xgsf0': {
-      'en': 'Add Worker',
-      'hi': 'उपयोगकर्ता को आमंत्रित करें',
-      'ta': 'பயனரை அழைக்கவும்',
-      'ur': 'صارف کو مدعو کریں۔',
-    },
-    'n0m9ar00': {
-      'en': 'Personal Details',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'yg1ekh0n': {
-      'en': 'Full Name',
-      'hi': 'पूरा नाम',
-      'ta': 'முழு பெயர்',
-      'ur': 'پورا نام',
-    },
-    'mz5mut7x': {
-      'en': 'Mobile Phone',
-      'hi': 'पूरा नाम',
-      'ta': 'முழு பெயர்',
-      'ur': 'پورا نام',
-    },
-    '8agmczjr': {
-      'en': 'Email',
-      'hi': 'ईमेल',
-      'ta': 'மின்னஞ்சல்',
-      'ur': 'ای میل',
-    },
-    '64vcjb3y': {
-      'en': 'Male',
-      'hi': 'टीम 1',
-      'ta': 'அணி 1',
-      'ur': 'ٹیم 1',
-    },
-    'kcdmsy6z': {
-      'en': 'Female',
-      'hi': 'टीम 2',
-      'ta': 'அணி 2',
-      'ur': 'ٹیم 2',
-    },
-    'smsaytv9': {
-      'en': 'Other',
-      'hi': 'टीम 3',
-      'ta': 'அணி 3',
-      'ur': 'ٹیم 3',
-    },
-    'jvdtxvmb': {
-      'en': 'Select Gender',
-      'hi': 'टीम का चयन',
-      'ta': 'குழுவைத் தேர்ந்தெடுக்கவும்',
-      'ur': 'ٹیم منتخب کریں۔',
-    },
-    '223jjggf': {
-      'en': 'Pin Code',
-      'hi': 'शीर्षक या भूमिका',
-      'ta': 'தலைப்பு அல்லது பாத்திரம்',
-      'ur': 'عنوان یا کردار',
-    },
-    'xbwbx3k1': {
-      'en': 'Bank Details',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'vi3ruy19': {
-      'en': 'Aadhar',
-      'hi': 'पूरा नाम',
-      'ta': 'முழு பெயர்',
-      'ur': 'پورا نام',
-    },
-    '6w78salz': {
-      'en': 'PAN Number',
-      'hi': 'पूरा नाम',
-      'ta': 'முழு பெயர்',
-      'ur': 'پورا نام',
-    },
-    'x5q2t29a': {
-      'en': 'IFSC Code',
-      'hi': 'पूरा नाम',
-      'ta': 'முழு பெயர்',
-      'ur': 'پورا نام',
-    },
-    'ey7ivw7e': {
-      'en': 'Account Number ',
-      'hi': 'पूरा नाम',
-      'ta': 'முழு பெயர்',
-      'ur': 'پورا نام',
-    },
-    'f4jju7ti': {
-      'en': 'Account Name',
-      'hi': 'पूरा नाम',
-      'ta': 'முழு பெயர்',
-      'ur': 'پورا نام',
-    },
-    '11z50tt4': {
-      'en': 'Bank Name',
-      'hi': 'पूरा नाम',
-      'ta': 'முழு பெயர்',
-      'ur': 'پورا نام',
-    },
-    'fe92palm': {
-      'en': 'Create Profile',
-      'hi': 'उपयोगकर्ता बनाएं और आमंत्रित करें',
-      'ta': 'பயனரை உருவாக்கி அழைக்கவும்',
-      'ur': 'صارف بنائیں اور مدعو کریں۔',
-    },
-    'glgmfuoa': {
-      'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
-    },
-    '0l1pajh7': {
-      'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
-    },
-    '0p2eu05j': {
-      'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
-    },
-    '7tvwrqlj': {
-      'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
-    },
-  },
-  // editOrganisation
-  {
-    'xm0ojz3j': {
-      'en': 'Change Photo',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'veh75wy7': {
-      'en': 'Organisation Details',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '6um683ot': {
-      'en': 'Organisation Name',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '6e96n7qc': {
-      'en': 'Main Contact',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'm0z4pki3': {
-      'en': 'Phone Number',
-      'hi': 'शीर्षक या भूमिका',
-      'ta': 'தலைப்பு அல்லது பாத்திரம்',
-      'ur': 'عنوان یا کردار',
-    },
-    'lxq6gj5n': {
-      'en': 'Email',
-      'hi': 'शीर्षक या भूमिका',
-      'ta': 'தலைப்பு அல்லது பாத்திரம்',
-      'ur': 'عنوان یا کردار',
-    },
-    'e9xqepak': {
-      'en': 'Street Address',
-      'hi': 'शीर्षक या भूमिका',
-      'ta': 'தலைப்பு அல்லது பாத்திரம்',
-      'ur': 'عنوان یا کردار',
-    },
-    'dy9aerlj': {
-      'en': 'Pin Code',
-      'hi': 'शीर्षक या भूमिका',
-      'ta': 'தலைப்பு அல்லது பாத்திரம்',
-      'ur': 'عنوان یا کردار',
-    },
-    '8zlopvkp': {
-      'en': 'Area',
-      'hi': 'शीर्षक या भूमिका',
-      'ta': 'தலைப்பு அல்லது பாத்திரம்',
-      'ur': 'عنوان یا کردار',
-    },
-    '6s0liz4e': {
-      'en': 'State',
-      'hi': 'शीर्षक या भूमिका',
-      'ta': 'தலைப்பு அல்லது பாத்திரம்',
-      'ur': 'عنوان یا کردار',
-    },
-    'mo8zwn0z': {
-      'en': 'District',
-      'hi': 'शीर्षक या भूमिका',
-      'ta': 'தலைப்பு அல்லது பாத்திரம்',
-      'ur': 'عنوان یا کردار',
-    },
-    'p5k6fbbq': {
-      'en': 'Save Changes',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'kp7ugtjf': {
-      'en': 'Edit Profile',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-  },
   // addOrganisation
   {
     '4xq6rzn3': {
@@ -2514,26 +2283,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'தலைப்பு அல்லது பாத்திரம்',
       'ur': 'عنوان یا کردار',
     },
-    '65k2sk8g': {
+    'psu4yyfx': {
       'en': 'Pin Code',
-      'hi': 'शीर्षक या भूमिका',
-      'ta': 'தலைப்பு அல்லது பாத்திரம்',
-      'ur': 'عنوان یا کردار',
-    },
-    'qn40qrx0': {
-      'en': 'Area',
-      'hi': 'शीर्षक या भूमिका',
-      'ta': 'தலைப்பு அல்லது பாத்திரம்',
-      'ur': 'عنوان یا کردار',
-    },
-    'g2g6yg8z': {
-      'en': 'State',
-      'hi': 'शीर्षक या भूमिका',
-      'ta': 'தலைப்பு அல்லது பாத்திரம்',
-      'ur': 'عنوان یا کردار',
-    },
-    'drrq25ah': {
-      'en': 'District',
       'hi': 'शीर्षक या भूमिका',
       'ta': 'தலைப்பு அல்லது பாத்திரம்',
       'ur': 'عنوان یا کردار',
@@ -2567,147 +2318,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
-    },
-  },
-  // organisationProfile
-  {
-    'btasszm6': {
-      'en': 'Organisation Details',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'jxa3zh2n': {
-      'en': 'Name',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'rb9eqcy1': {
-      'en': 'Name',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'se39ua43': {
-      'en': 'Industry',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'zz48dukz': {
-      'en': 'Industry',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '1nm20297': {
-      'en': 'Main Contact',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'jeo6ucx6': {
-      'en': 'Main Contact',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'bdzq58ch': {
-      'en': 'Phone Number',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '2hxnl0d1': {
-      'en': 'Phone Number',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'yvwx6alh': {
-      'en': 'Email',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'b2f67axw': {
-      'en': 'Email',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'n2u3ssdo': {
-      'en': 'Street Address',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '5n25mpqv': {
-      'en': 'Street Address',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '5fp7srqg': {
-      'en': 'Pin Code',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    't9zyvibt': {
-      'en': 'Pin Code',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'tfyz3fp8': {
-      'en': 'Area',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'jz4ynwlc': {
-      'en': 'Area',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'uuwc7lwr': {
-      'en': 'State',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'pknqdbfs': {
-      'en': 'State',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'o25cys6l': {
-      'en': 'District',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '4rgqrani': {
-      'en': 'District',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'sgri7v5k': {
-      'en': 'Edit Details',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'qw9qopfb': {
-      'en': 'Organisation Details',
-      'hi': '',
-      'ta': '',
-      'ur': '',
     },
   },
   // scoutOTP
@@ -2763,6 +2373,87 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'hi': 'घर',
       'ta': 'வீடு',
       'ur': 'گھر',
+    },
+  },
+  // organisationProfile
+  {
+    'btasszm6': {
+      'en': 'Organisation Details',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'jxa3zh2n': {
+      'en': 'Name',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'se39ua43': {
+      'en': 'Industry',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    '1nm20297': {
+      'en': 'Main Contact',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'bdzq58ch': {
+      'en': 'Phone Number',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'yvwx6alh': {
+      'en': 'Email',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'n2u3ssdo': {
+      'en': 'Street Address',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    '5fp7srqg': {
+      'en': 'Pin Code',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'tfyz3fp8': {
+      'en': 'Area',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'uuwc7lwr': {
+      'en': 'State',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'o25cys6l': {
+      'en': 'District',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'sgri7v5k': {
+      'en': 'Edit Details',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'qw9qopfb': {
+      'en': 'Organisation Details',
+      'hi': '',
+      'ta': '',
+      'ur': '',
     },
   },
   // addScout
@@ -2912,7 +2603,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'فیلڈ کی ضرورت ہے',
     },
   },
-  // addWorkerCopy
+  // addWorker
   {
     '09vf9xyd': {
       'en': 'Add Worker',
@@ -2928,6 +2619,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'kp2hskr9': {
       'en': 'Full Name',
+      'hi': 'पूरा नाम',
+      'ta': 'முழு பெயர்',
+      'ur': 'پورا نام',
+    },
+    '3b9apilq': {
+      'en': 'Phone Number',
       'hi': 'पूरा नाम',
       'ta': 'முழு பெயர்',
       'ur': 'پورا نام',
@@ -3016,156 +2713,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'முழு பெயர்',
       'ur': 'پورا نام',
     },
-    'lopweeq3': {
-      'en': 'Skills',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'dypan04k': {
-      'en': 'Add Skills',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'otgz3yam': {
-      'en': 'Skill 1',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '7bm9yk7c': {
-      'en': 'Level',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'bat59qyr': {
-      'en': 'Years of Experience',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'bt244htn': {
-      'en': 'Skill 2',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'rsisazj6': {
-      'en': 'Level',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'ob2yqq95': {
-      'en': 'Years of Experience',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '7gx1ao6n': {
-      'en': 'Skill 3',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'ndwv0hf1': {
-      'en': 'Level',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'kesan6qp': {
-      'en': 'Years of Experience',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '1h2zzmoy': {
-      'en': 'Experience',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'bui5aiiz': {
-      'en': 'Add Skills',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'qbzq2rx4': {
-      'en': 'Company Name',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'nossa83h': {
-      'en': 'Job Title',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'l20fgnpa': {
-      'en': 'Years at Company',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'mcaowaa5': {
-      'en': 'Skills',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'tjwcqaxc': {
-      'en': 'Company Name',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'dlbejpec': {
-      'en': 'Job Title',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    't4vbqg3l': {
-      'en': 'Years at Company',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'c6atushp': {
-      'en': 'Skills',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'hc1mdkql': {
-      'en': 'Company Name',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'rn69nq16': {
-      'en': 'Job Title',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'j4lp7g0l': {
-      'en': 'Years at Company',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'jri58395': {
-      'en': 'Skills',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
     'r58n01hs': {
       'en': 'Create Profile',
       'hi': 'उपयोगकर्ता बनाएं और आमंत्रित करें',
@@ -3250,333 +2797,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'hi': 'घर',
       'ta': 'வீடு',
       'ur': 'گھر',
-    },
-  },
-  // addWorkerSkills
-  {
-    'ykw2nl3x': {
-      'en': 'Sewing',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'u5oo9bt8': {
-      'en': 'Farming',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'kj6fxrp7': {
-      'en': 'Textiles',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '3ugca6sv': {
-      'en': 'Plumber',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'yfrnmgbj': {
-      'en': 'Welder',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'vbput95a': {
-      'en': 'Cooking',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'hhpz0s92': {
-      'en': 'Skills',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '6qxcl700': {
-      'en': 'Less than 1 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'nks0660m': {
-      'en': '1 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'zkl2ppt1': {
-      'en': '2 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'zrrsaxqp': {
-      'en': '3 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '5ox5vp7q': {
-      'en': '4 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '772l0d09': {
-      'en': '5 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'zkp5fwhj': {
-      'en': '6 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'ppq31g1v': {
-      'en': '7 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '60y0vhq1': {
-      'en': '8 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '550aulx6': {
-      'en': '9 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'akmojphb': {
-      'en': '10 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'xb29txb8': {
-      'en': 'More than 10 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'ag1mrdzf': {
-      'en': 'Skill level',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'yd1msy7o': {
-      'en': 'Add',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'de1zp0vf': {
-      'en': 'Job Title',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'oaylxwhh': {
-      'en': 'Company name',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'x2dsumlu': {
-      'en': 'Start date',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'd0qpa4pc': {
-      'en': 'End date',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'jhvkgigp': {
-      'en': 'sewing',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '7e5xf5om': {
-      'en': 'Farming',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'ambxd43n': {
-      'en': 'Textiles',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '4kou5gh0': {
-      'en': 'Plumber',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '134jrvjt': {
-      'en': 'fitter',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'djru33i3': {
-      'en': 'Minning work',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'fcqint4w': {
-      'en': 'Load bearer',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'p3cxdlen': {
-      'en': 'Assambling',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '144a4k4k': {
-      'en': 'Installers',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '9dzz1gyr': {
-      'en': 'Fabricators',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'gus43go8': {
-      'en': 'Welder',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'bse9m1go': {
-      'en': 'Cooking',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'kunst62o': {
-      'en': 'House help',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '1wg0nu0o': {
-      'en': 'Gardening',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'b2i6m7g5': {
-      'en': '4 Wheel Driver',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '4vfy6pwm': {
-      'en': '8 Wheel Driver',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'szxs3yep': {
-      'en': '12 Wheel Driver',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '7e1jueqv': {
-      'en': 'others',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'jc80jip3': {
-      'en': 'Skills',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'n3ez5vby': {
-      'en': 'Enter skill',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'sahzplqt': {
-      'en': 'Add experience',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'ysy4ltqz': {
-      'en': 'Job title  :',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'rd7suq29': {
-      'en': 'Company name  :',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '43c420r3': {
-      'en': 'From  :',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '34dqmzoe': {
-      'en': 'From  :',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'ss1ifa3y': {
-      'en': 'Skills  :',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'd9ifv2z4': {
-      'en': 'Save',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'xro5xsit': {
-      'en': 'Add Skills and Experience',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '2h58d1ik': {
-      'en': 'Home',
-      'hi': '',
-      'ta': '',
-      'ur': '',
     },
   },
   // editCaptainProfile
@@ -3702,335 +2922,65 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': '',
     },
   },
-  // editWorkerSkills
+  // addSkillsExp
   {
-    '41340p20': {
-      'en': 'Sewing',
+    '9dix1hhl': {
+      'en': 'Add Skills & Experience',
+      'hi': 'उपयोगकर्ता को आमंत्रित करें',
+      'ta': 'பயனரை அழைக்கவும்',
+      'ur': 'صارف کو مدعو کریں۔',
+    },
+    'mfflaak0': {
+      'en': 'Add Skills',
       'hi': '',
       'ta': '',
       'ur': '',
     },
-    'ddtfhtzm': {
-      'en': 'Farming',
+    'xd5gopfy': {
+      'en': 'Add Experience',
       'hi': '',
       'ta': '',
       'ur': '',
     },
-    'pp76arjo': {
-      'en': 'Textiles',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+    '98odaavn': {
+      'en': 'Submit',
+      'hi': 'उपयोगकर्ता बनाएं और आमंत्रित करें',
+      'ta': 'பயனரை உருவாக்கி அழைக்கவும்',
+      'ur': 'صارف بنائیں اور مدعو کریں۔',
     },
-    'ti05706j': {
-      'en': 'Plumber',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+    'jfofqy7l': {
+      'en': 'Field is required',
+      'hi': 'ये स्थान भरा जाना है',
+      'ta': 'இந்த பகுதி அவசியமானது',
+      'ur': 'فیلڈ کی ضرورت ہے',
     },
-    'w0jif1rt': {
-      'en': 'Welder',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+    '4gham8lq': {
+      'en': 'Field is required',
+      'hi': 'ये स्थान भरा जाना है',
+      'ta': 'இந்த பகுதி அவசியமானது',
+      'ur': 'فیلڈ کی ضرورت ہے',
     },
-    'dvgezi46': {
-      'en': 'Cooking',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+    'fu58wsrb': {
+      'en': 'Field is required',
+      'hi': 'ये स्थान भरा जाना है',
+      'ta': 'இந்த பகுதி அவசியமானது',
+      'ur': 'فیلڈ کی ضرورت ہے',
     },
-    'p2g9izti': {
-      'en': 'Skills',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'tzyqtl7x': {
-      'en': 'Less than 1 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '260k5re4': {
-      'en': '1 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'r087ktl9': {
-      'en': '2 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'wjnfjj5f': {
-      'en': '3 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'mji4781t': {
-      'en': '4 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '6r1lgm14': {
-      'en': '5 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '696ndcyx': {
-      'en': '6 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'h590p28w': {
-      'en': '7 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'b1lf7che': {
-      'en': '8 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'xveddlro': {
-      'en': '9 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '8b729f1h': {
-      'en': '10 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'mcr4e2as': {
-      'en': 'More than 10 year',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '9qkrz1kd': {
-      'en': 'Skill level',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '1bxp0bqo': {
-      'en': 'Add',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '8jvz3ncw': {
-      'en': 'Job Title',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'mi4s69vw': {
-      'en': 'Company name',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'x9dbalce': {
-      'en': 'Start date',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'nrokxc2b': {
-      'en': 'End date',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'j157h2r8': {
-      'en': 'sewing',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '8nmd8k70': {
-      'en': 'Farming',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '0u72gdvi': {
-      'en': 'Textiles',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'rdyslvnf': {
-      'en': 'Plumber',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'f50p6ctv': {
-      'en': 'fitter',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '5dgb3k6c': {
-      'en': 'Minning work',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'expd7343': {
-      'en': 'Load bearer',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'q2q71fdc': {
-      'en': 'Assambling',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'trd3oz2q': {
-      'en': 'Installers',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '8by3j82l': {
-      'en': 'Fabricators',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'l3glmquj': {
-      'en': 'Welder',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'gyv8k111': {
-      'en': 'Cooking',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'ghjplk8a': {
-      'en': 'House help',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'e0xbcey0': {
-      'en': 'Gardening',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'dil4qrt0': {
-      'en': '4 Wheel Driver',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'ppmt3kf8': {
-      'en': '8 Wheel Driver',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'mkuqbgd7': {
-      'en': '12 Wheel Driver',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '3aizovyw': {
-      'en': 'others',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'm92vkgk6': {
-      'en': 'Skills',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'luzc1517': {
-      'en': 'Enter skill',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'dth7i7w3': {
-      'en': 'Add experience',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    '6cduvwl8': {
-      'en': 'Job title  :',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'w0kvbo42': {
-      'en': 'Company name  :',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'xl64ajz0': {
-      'en': 'From  :',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'zg9ghurj': {
-      'en': 'From  :',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'iecz0jxj': {
-      'en': 'Skills  :',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'zm8m6475': {
-      'en': 'Save',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'nuaxpsar': {
-      'en': 'Edit Skills and Experience',
-      'hi': '',
-      'ta': '',
-      'ur': '',
-    },
-    'jgynhe75': {
-      'en': 'Home',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+    'm5l1j9nh': {
+      'en': 'Field is required',
+      'hi': 'ये स्थान भरा जाना है',
+      'ta': 'இந்த பகுதி அவசியமானது',
+      'ur': 'فیلڈ کی ضرورت ہے',
     },
   },
   // createJobContract
   {
+    'i2ifrml6': {
+      'en': 'Job Contract',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
     '2r1wkcm5': {
       'en': 'Not Started',
       'hi': 'शुरू नहीं',
@@ -4322,6 +3272,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'ur': '',
     },
+    'qil6547w': {
+      'en': 'Admin',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
   },
   // changePhoto
   {
@@ -4473,6 +3429,30 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'ur': '',
     },
+    'u0ktwbgk': {
+      'en': 'Is this a primary skill?',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'hq0h8nrn': {
+      'en': 'Yes',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    '582vr1ft': {
+      'en': 'No',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'mj6cikeq': {
+      'en': 'Please select...',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
     'l4wdgx6w': {
       'en': 'Create Skill',
       'hi': 'टास्क बनाएं',
@@ -4510,10 +3490,82 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': '',
     },
   },
-  // emptyOrganisations
+  // modalAddExp
   {
-    'cnwszav9': {
-      'en': 'Add Organisation',
+    '2ng1flrj': {
+      'en': 'Add Experience',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'nyprijsb': {
+      'en': 'Company Name',
+      'hi': 'पूरा नाम',
+      'ta': 'முழு பெயர்',
+      'ur': 'پورا نام',
+    },
+    'qxrky9gj': {
+      'en': 'Job Title',
+      'hi': 'पूरा नाम',
+      'ta': 'முழு பெயர்',
+      'ur': 'پورا نام',
+    },
+    'rciz6rox': {
+      'en': 'Skill 1',
+      'hi': 'शुरू नहीं',
+      'ta': 'துவங்கவில்லை',
+      'ur': 'شروع نہیں کیا',
+    },
+    '98cqpidc': {
+      'en': 'Skill 2',
+      'hi': 'चालू',
+      'ta': 'செயல்பாட்டில் உள்ளது',
+      'ur': 'کام جاری ہے',
+    },
+    'q0zcyk9r': {
+      'en': 'Skill 3',
+      'hi': 'पूरा',
+      'ta': 'முழுமை',
+      'ur': 'مکمل',
+    },
+    'h8g3ayjk': {
+      'en': 'Select Primary Skill',
+      'hi': 'स्थिति का चयन करें',
+      'ta': 'நிலையைத் தேர்ந்தெடுக்கவும்',
+      'ur': 'اسٹیٹس کو منتخب کریں۔',
+    },
+    '4kzr0imo': {
+      'en': 'Create Experience',
+      'hi': 'टास्क बनाएं',
+      'ta': 'பணியை உருவாக்கவும்',
+      'ur': 'ٹاسک بنائیں',
+    },
+    '2wvecb2s': {
+      'en': 'Please add a task name.',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'lvb4q3n0': {
+      'en': 'Please enter at least 3 letters.',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'g31rabh0': {
+      'en': 'Please choose an option from the dropdown',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'a98dlbgu': {
+      'en': 'Field is required',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'xbx98mr2': {
+      'en': 'Please choose an option from the dropdown',
       'hi': '',
       'ta': '',
       'ur': '',

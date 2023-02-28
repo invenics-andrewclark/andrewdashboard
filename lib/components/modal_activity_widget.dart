@@ -1,6 +1,6 @@
-import '../flutter_flow/flutter_flow_icon_button.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
 import 'dart:ui';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -46,11 +46,11 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
     context.watch<FFAppState>();
 
     return ClipRRect(
-      borderRadius: BorderRadius.circular(0),
+      borderRadius: BorderRadius.circular(0.0),
       child: BackdropFilter(
         filter: ImageFilter.blur(
-          sigmaX: 5,
-          sigmaY: 6,
+          sigmaX: 5.0,
+          sigmaY: 6.0,
         ),
         child: Container(
           width: double.infinity,
@@ -58,26 +58,26 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).overlay,
           ),
-          alignment: AlignmentDirectional(0, 0),
+          alignment: AlignmentDirectional(0.0, 0.0),
           child: Container(
             width: double.infinity,
-            height: 600,
+            height: 600.0,
             constraints: BoxConstraints(
-              maxWidth: 570,
+              maxWidth: 570.0,
             ),
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).secondaryBackground,
               boxShadow: [
                 BoxShadow(
-                  blurRadius: 4,
+                  blurRadius: 4.0,
                   color: Color(0x33000000),
-                  offset: Offset(0, 2),
+                  offset: Offset(0.0, 2.0),
                 )
               ],
-              borderRadius: BorderRadius.circular(12),
+              borderRadius: BorderRadius.circular(12.0),
             ),
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(4, 4, 4, 0),
+              padding: EdgeInsetsDirectional.fromSTEB(4.0, 4.0, 4.0, 0.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -88,7 +88,8 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(16, 20, 0, 0),
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            16.0, 20.0, 0.0, 0.0),
                         child: SelectionArea(
                             child: Text(
                           FFLocalizations.of(context).getText(
@@ -98,15 +99,16 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                         )),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 12, 16, 0),
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            0.0, 12.0, 16.0, 0.0),
                         child: FlutterFlowIconButton(
                           borderColor: Colors.transparent,
-                          borderRadius: 30,
-                          buttonSize: 44,
+                          borderRadius: 30.0,
+                          buttonSize: 44.0,
                           icon: Icon(
                             Icons.close_rounded,
                             color: FlutterFlowTheme.of(context).secondaryText,
-                            size: 24,
+                            size: 24.0,
                           ),
                           onPressed: () async {
                             Navigator.pop(context);
@@ -117,35 +119,38 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                   ),
                   Expanded(
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                       child: ListView(
                         padding: EdgeInsets.zero,
                         shrinkWrap: true,
                         scrollDirection: Axis.vertical,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(8, 0, 8, 8),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                8.0, 0.0, 8.0, 8.0),
                             child: Container(
                               width: double.infinity,
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
-                                borderRadius: BorderRadius.circular(8),
+                                borderRadius: BorderRadius.circular(8.0),
                               ),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    8, 12, 0, 12),
+                                    8.0, 12.0, 0.0, 12.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Container(
-                                      width: 4,
-                                      height: 60,
+                                      width: 4.0,
+                                      height: 60.0,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .primaryColor,
-                                        borderRadius: BorderRadius.circular(4),
+                                        borderRadius:
+                                            BorderRadius.circular(4.0),
                                       ),
                                     ),
                                     Column(
@@ -159,15 +164,15 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    12, 0, 12, 0),
+                                                    12.0, 0.0, 12.0, 0.0),
                                             child: ClipRRect(
                                               borderRadius:
-                                                  BorderRadius.circular(40),
+                                                  BorderRadius.circular(40.0),
                                               child: CachedNetworkImage(
                                                 imageUrl:
                                                     'https://images.unsplash.com/photo-1610737241336-371badac3b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-                                                width: 40,
-                                                height: 40,
+                                                width: 40.0,
+                                                height: 40.0,
                                                 fit: BoxFit.cover,
                                               ),
                                             ),
@@ -180,15 +185,15 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    8, 0, 8, 0),
+                                                    8.0, 0.0, 8.0, 0.0),
                                             child: ClipRRect(
                                               borderRadius:
-                                                  BorderRadius.circular(40),
+                                                  BorderRadius.circular(40.0),
                                               child: CachedNetworkImage(
                                                 imageUrl:
                                                     'https://images.unsplash.com/photo-1610737241336-371badac3b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-                                                width: 32,
-                                                height: 32,
+                                                width: 32.0,
+                                                height: 32.0,
                                                 fit: BoxFit.cover,
                                               ),
                                             ),
@@ -198,7 +203,7 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                     Expanded(
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 12, 0),
+                                            0.0, 0.0, 12.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
@@ -221,7 +226,8 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                                 ),
                                                 Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(0, 0, 12, 0),
+                                                      .fromSTEB(
+                                                          0.0, 0.0, 12.0, 0.0),
                                                   child: SelectionArea(
                                                       child: Text(
                                                     FFLocalizations.of(context)
@@ -237,10 +243,10 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 4, 0, 0),
+                                                  .fromSTEB(0.0, 4.0, 0.0, 0.0),
                                               child: Wrap(
-                                                spacing: 0,
-                                                runSpacing: 0,
+                                                spacing: 0.0,
+                                                runSpacing: 0.0,
                                                 alignment: WrapAlignment.start,
                                                 crossAxisAlignment:
                                                     WrapCrossAlignment.start,
@@ -254,8 +260,8 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(
-                                                                0, 0, 2, 0),
+                                                            .fromSTEB(0.0, 0.0,
+                                                                2.0, 0.0),
                                                     child: Text(
                                                       FFLocalizations.of(
                                                               context)
@@ -299,7 +305,7 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 8, 0, 0),
+                                                  .fromSTEB(0.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 FFLocalizations.of(context)
                                                     .getText(
@@ -312,16 +318,17 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 8, 0, 0),
+                                                  .fromSTEB(0.0, 8.0, 0.0, 0.0),
                                               child: Container(
                                                 width: double.infinity,
                                                 decoration: BoxDecoration(
                                                   borderRadius:
-                                                      BorderRadius.circular(8),
+                                                      BorderRadius.circular(
+                                                          8.0),
                                                 ),
                                                 child: Wrap(
-                                                  spacing: 0,
-                                                  runSpacing: 0,
+                                                  spacing: 0.0,
+                                                  runSpacing: 0.0,
                                                   alignment:
                                                       WrapAlignment.start,
                                                   crossAxisAlignment:
@@ -337,7 +344,10 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                                       padding:
                                                           EdgeInsetsDirectional
                                                               .fromSTEB(
-                                                                  0, 0, 2, 0),
+                                                                  0.0,
+                                                                  0.0,
+                                                                  2.0,
+                                                                  0.0),
                                                       child: SelectionArea(
                                                           child: AutoSizeText(
                                                         FFLocalizations.of(
@@ -357,7 +367,10 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                                       padding:
                                                           EdgeInsetsDirectional
                                                               .fromSTEB(
-                                                                  0, 0, 12, 0),
+                                                                  0.0,
+                                                                  0.0,
+                                                                  12.0,
+                                                                  0.0),
                                                       child: SelectionArea(
                                                           child: AutoSizeText(
                                                         FFLocalizations.of(
@@ -378,7 +391,8 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
-                                                                  fontSize: 14,
+                                                                  fontSize:
+                                                                      14.0,
                                                                   useGoogleFonts: GoogleFonts
                                                                           .asMap()
                                                                       .containsKey(

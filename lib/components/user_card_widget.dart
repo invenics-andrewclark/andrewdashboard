@@ -1,6 +1,6 @@
-import '../auth/auth_util.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
+import '/auth/auth_util.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -50,17 +50,17 @@ class _UserCardWidgetState extends State<UserCardWidget> {
         clipBehavior: Clip.antiAliasWithSaveLayer,
         color: FlutterFlowTheme.of(context).primaryColor,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(40),
+          borderRadius: BorderRadius.circular(40.0),
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(2, 2, 2, 2),
+          padding: EdgeInsetsDirectional.fromSTEB(2.0, 2.0, 2.0, 2.0),
           child: AuthUserStreamWidget(
             builder: (context) => ClipRRect(
-              borderRadius: BorderRadius.circular(40),
+              borderRadius: BorderRadius.circular(40.0),
               child: Image.network(
                 currentUserPhoto,
-                width: 40,
-                height: 40,
+                width: 40.0,
+                height: 40.0,
                 fit: BoxFit.cover,
               ),
             ),

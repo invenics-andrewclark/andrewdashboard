@@ -44,11 +44,11 @@ abstract class EmploymentContractsRecord
   @BuiltValueField(wireName: 'worker_image')
   String? get workerImage;
 
-  @BuiltValueField(wireName: 'worker_reference')
-  DocumentReference? get workerReference;
-
   @BuiltValueField(wireName: 'organisation_reference')
   DocumentReference? get organisationReference;
+
+  @BuiltValueField(wireName: 'worker_reference')
+  DocumentReference? get workerReference;
 
   @BuiltValueField(wireName: kDocumentReferenceField)
   DocumentReference? get ffRef;
@@ -107,8 +107,8 @@ Map<String, dynamic> createEmploymentContractsRecordData({
   String? workerSkill,
   String? workerSkillExperience,
   String? workerImage,
-  DocumentReference? workerReference,
   DocumentReference? organisationReference,
+  DocumentReference? workerReference,
 }) {
   final firestoreData = serializers.toFirestore(
     EmploymentContractsRecord.serializer,
@@ -125,8 +125,8 @@ Map<String, dynamic> createEmploymentContractsRecordData({
         ..workerSkill = workerSkill
         ..workerSkillExperience = workerSkillExperience
         ..workerImage = workerImage
-        ..workerReference = workerReference
-        ..organisationReference = organisationReference,
+        ..organisationReference = organisationReference
+        ..workerReference = workerReference,
     ),
   );
 

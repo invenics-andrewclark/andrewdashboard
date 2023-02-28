@@ -1,9 +1,9 @@
-import '../backend/backend.dart';
-import '../components/empty_tasks_widget.dart';
-import '../flutter_flow/flutter_flow_animations.dart';
-import '../flutter_flow/flutter_flow_icon_button.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
+import '/backend/backend.dart';
+import '/components/empty_tasks_widget.dart';
+import '/flutter_flow/flutter_flow_animations.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -46,15 +46,15 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: 0,
-          end: 1,
+          begin: 0.0,
+          end: 1.0,
         ),
         MoveEffect(
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0, 30),
-          end: Offset(0, 0),
+          begin: Offset(0.0, 30.0),
+          end: Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -95,13 +95,13 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
         automaticallyImplyLeading: false,
         leading: FlutterFlowIconButton(
           borderColor: Colors.transparent,
-          borderRadius: 30,
-          borderWidth: 1,
-          buttonSize: 60,
+          borderRadius: 30.0,
+          borderWidth: 1.0,
+          buttonSize: 60.0,
           icon: Icon(
             Icons.arrow_back_rounded,
             color: FlutterFlowTheme.of(context).primaryText,
-            size: 30,
+            size: 30.0,
           ),
           onPressed: () async {
             context.pushNamed('mainScout');
@@ -109,7 +109,7 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
         ),
         actions: [],
         centerTitle: false,
-        elevation: 0,
+        elevation: 0.0,
       ),
       body: SafeArea(
         child: GestureDetector(
@@ -124,54 +124,94 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                     boxShadow: [
                       BoxShadow(
-                        blurRadius: 5,
+                        blurRadius: 5.0,
                         color: Color(0x230F1113),
-                        offset: Offset(0, 2),
+                        offset: Offset(0.0, 2.0),
                       )
                     ],
                   ),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(16, 8, 16, 16),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 16.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        InkWell(
-                          onTap: () async {
-                            context.pushNamed(
-                              'scoutProfile',
-                              queryParams: {
-                                'scoutUserRef': serializeParam(
-                                  widget.scoutUserRef,
-                                  ParamType.DocumentReference,
-                                ),
-                              }.withoutNulls,
-                            );
-                          },
-                          child: Container(
-                            width: 80,
-                            height: 80,
-                            decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context).lineColor,
-                              shape: BoxShape.circle,
-                            ),
-                            child: Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 2, 2, 2),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(60),
-                                child: Image.network(
-                                  widget.scoutPhoto!,
-                                  width: 80,
-                                  height: 80,
-                                  fit: BoxFit.cover,
+                        if (widget.scoutPhoto == null ||
+                            widget.scoutPhoto == '')
+                          InkWell(
+                            onTap: () async {
+                              context.pushNamed(
+                                'scoutProfile',
+                                queryParams: {
+                                  'scoutUserRef': serializeParam(
+                                    widget.scoutUserRef,
+                                    ParamType.DocumentReference,
+                                  ),
+                                }.withoutNulls,
+                              );
+                            },
+                            child: Container(
+                              width: 80.0,
+                              height: 80.0,
+                              decoration: BoxDecoration(
+                                color: FlutterFlowTheme.of(context).lineColor,
+                                shape: BoxShape.circle,
+                              ),
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    2.0, 2.0, 2.0, 2.0),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(60.0),
+                                  child: Image.asset(
+                                    'assets/images/MicrosoftTeams-image_(2).png',
+                                    width: 80.0,
+                                    height: 80.0,
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
                           ),
-                        ),
+                        if (widget.scoutPhoto != null &&
+                            widget.scoutPhoto != '')
+                          InkWell(
+                            onTap: () async {
+                              context.pushNamed(
+                                'scoutProfile',
+                                queryParams: {
+                                  'scoutUserRef': serializeParam(
+                                    widget.scoutUserRef,
+                                    ParamType.DocumentReference,
+                                  ),
+                                }.withoutNulls,
+                              );
+                            },
+                            child: Container(
+                              width: 80.0,
+                              height: 80.0,
+                              decoration: BoxDecoration(
+                                color: FlutterFlowTheme.of(context).lineColor,
+                                shape: BoxShape.circle,
+                              ),
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    2.0, 2.0, 2.0, 2.0),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(60.0),
+                                  child: Image.network(
+                                    widget.scoutPhoto!,
+                                    width: 80.0,
+                                    height: 80.0,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 8),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              16.0, 0.0, 0.0, 8.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -182,8 +222,8 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
                                 style: FlutterFlowTheme.of(context).title3,
                               ),
                               Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 4.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
                                     'zxieytlj' /* Associated Captain */,
@@ -192,8 +232,8 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
                                 ),
                               ),
                               Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 4.0, 0.0, 0.0),
                                 child: Text(
                                   widget.scoutArea!,
                                   style: FlutterFlowTheme.of(context).bodyText2,
@@ -207,7 +247,8 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
+                  padding:
+                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -222,7 +263,7 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 24),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 24.0),
                   child: FutureBuilder<List<WorkersRecord>>(
                     future: queryWorkersRecordOnce(
                       queryBuilder: (workersRecord) => workersRecord
@@ -233,8 +274,8 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
                       if (!snapshot.hasData) {
                         return Center(
                           child: SizedBox(
-                            width: 50,
-                            height: 50,
+                            width: 50.0,
+                            height: 50.0,
                             child: CircularProgressIndicator(
                               color: FlutterFlowTheme.of(context).primaryColor,
                             ),
@@ -247,11 +288,10 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
                         return Center(
                           child: Container(
                             width: MediaQuery.of(context).size.width * 0.8,
-                            height: 300,
+                            height: 300.0,
                             child: EmptyTasksWidget(
-                              title: 'No Tasks Assigned',
-                              bodyText:
-                                  'This user hasn\'t completed any tasks!',
+                              title: 'No Workers Assigned',
+                              body: 'Add some workers',
                             ),
                           ),
                         );
@@ -266,8 +306,8 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
                           final listViewWorkersRecord =
                               listViewWorkersRecordList[listViewIndex];
                           return Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(16, 0, 16, 12),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                16.0, 0.0, 16.0, 12.0),
                             child: InkWell(
                               onTap: () async {
                                 context.pushNamed(
@@ -289,16 +329,16 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  borderRadius: BorderRadius.circular(12),
+                                  borderRadius: BorderRadius.circular(12.0),
                                   border: Border.all(
                                     color:
                                         FlutterFlowTheme.of(context).lineColor,
-                                    width: 2,
+                                    width: 2.0,
                                   ),
                                 ),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      12, 12, 12, 12),
+                                      12.0, 12.0, 12.0, 12.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     crossAxisAlignment:
@@ -312,7 +352,8 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
                                           Expanded(
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 0, 12, 0),
+                                                  .fromSTEB(
+                                                      0.0, 0.0, 12.0, 0.0),
                                               child: Text(
                                                 listViewWorkersRecord.fullName!,
                                                 style:
@@ -322,19 +363,20 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
                                             ),
                                           ),
                                           Container(
-                                            height: 32,
+                                            height: 32.0,
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryColor,
                                               borderRadius:
-                                                  BorderRadius.circular(32),
+                                                  BorderRadius.circular(32.0),
                                             ),
                                             alignment:
-                                                AlignmentDirectional(0, 0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(12, 0, 12, 0),
+                                                  .fromSTEB(
+                                                      12.0, 0.0, 12.0, 0.0),
                                               child: Text(
                                                 listViewWorkersRecord.isWorking!
                                                     .toString(),
@@ -363,7 +405,7 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
                                       ),
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 4, 0, 0),
+                                            0.0, 4.0, 0.0, 0.0),
                                         child: Text(
                                           listViewWorkersRecord.phone!,
                                           style: FlutterFlowTheme.of(context)
@@ -371,8 +413,8 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
                                         ),
                                       ),
                                       Divider(
-                                        height: 24,
-                                        thickness: 1,
+                                        height: 24.0,
+                                        thickness: 1.0,
                                         color: FlutterFlowTheme.of(context)
                                             .lineColor,
                                       ),
@@ -404,7 +446,7 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    8, 0, 0, 0),
+                                                    8.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               dateTimeFormat(
                                                 'd/M/y',
@@ -423,7 +465,7 @@ class _ScoutWorkersWidgetState extends State<ScoutWorkersWidget>
                                             Icons.keyboard_arrow_right_rounded,
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryText,
-                                            size: 24,
+                                            size: 24.0,
                                           ),
                                         ],
                                       ),
